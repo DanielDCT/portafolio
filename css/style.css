@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    }
+
+/* Barra Lateral */
+
+/* width */
+::-webkit-scrollbar {
+    background-color: rgb(71, 71, 71);
+    width: 15px;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 34, 30);
+    }
+
+/*seccion 1 - banner*/
+
+section {  
+    /* border-bottom-left-radius: 50% 50%;
+    border-top-right-radius: 20% 10%; */
+    padding: 100px;
+    }
+
+.banner {
+    background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.532), hsla(0, 0%, 0%, 0.7)), url("../img/banner2.webp");
+    position: relative;
+    min-height: 110vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 60px),50% 100%,0 calc(100% - 60px));
+    }
+
+.banner  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+    }
+
+.banner h2 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    }
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    }
+
+/* ++++++++++ CONTENEDOR DEL TITULO ANIMADO ++++++++++ */
+
+.titulobx {
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    margin-bottom: -50px;
+    }
+
+/* Animation Maquina de escribir */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+    }
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 100%;} /*  Tamaño al cual llegará la animación */
+    }
+@keyframes blinkTextCursor {
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+    }
+
+/* ++++++++++ FIN CONTENEDOR DEL TITULO ANIMADO ++++++++++ */
+
+.btn {
+    background: #450d89;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    }
+
+.btn:hover {
+    background: #29005b;
+    color: #fff;
+    }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    }
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    }
+
+header.sticky .logo {
+    color: #111;
+    }
+
+header ul {
+    position: relative;
+    display: flex;
+    }
+
+header ul li {
+    position: relative;
+    list-style: none;
+    }
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+    }
+
+header ul li a:hover {
+    transition: .5s;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    }
+
+header.sticky ul li a {
+     color: #111;
+    }
+
+/* Fin seccion 1 - banner*/
+
+
+/*seccion 2 - Sobre mi */
+
+.about {
+    background-color: #FFFFFF;    
+    background-image: url("../img/prisma-fonfo.svg");
+    background-size: cover;
+    clip-path: polygon(0 0,50% 60px,100% 0,100% 100%,0 100%);
+    margin-top: -40px;
+    }
+
+.cont-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+    }
+
+.cont-titulo h2 {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+.cont-svg-perfil {
+    width: 100%;
+    }
+
+.cont-svg-perfil .img-perfil {
+    display: flex;
+    margin: auto;
+    padding-bottom: 40px;
+    }
+
+.contenedor-sm {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.contentbxpf {
+    padding-right: 30px;
+    text-align: justify;
+    }
+
+.contentbxpf h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+.contentbxpf p {
+    line-height: 2em;
+    }
+
+.img-dev {
+    max-width: 100%;
+    }
+
+.contdescarga {
+    margin-top: 10px;
+    }
+
+.btn-descarga {
+    background-color: rgb(140, 0, 216);
+    padding: 10px 20px;
+    color: aliceblue;
+    }
+
+.btn-descarga:hover {
+    background-color: rgb(103, 0, 158);
+    }
+
+/* Botones Redes Sociales */
+
+.wrapper{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.wrapper .icon{
+    margin: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+a {
+    color: rgb(140, 0, 216);
+    text-decoration: none;
+    }
+
+.wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+.wrapper .icon span i{
+    line-height: 60px;
+    font-size: 30px;
+    }
+
+.wrapper .icon:hover span{
+    color: #fff;
+    animation: run .5s linear;
+    }
+
+@keyframes run {
+    0% { bottom: 0; }
+    25% { bottom: 10px; }
+    50% { bottom: 0; }
+    75% { bottom: 20px; }
+    100% { bottom: 0; }
+}
+
+.wrapper .facebook:hover span {
+    background: #3B5999;
+    }
+
+.wrapper .whatsapp:hover span {
+    background: #17e064;
+    }
+
+.wrapper .instagram:hover span {
+    background: #e1306c;
+    }
+
+.wrapper .github:hover span {
+    background: #333;
+    }
+
+.wrapper .twitter:hover span {
+    background: #46C1F6;
+    }
+    
+/* Fin seccion 2 - Sobre mi */
+
+
+/* Seccion 3 - Lenguajes */
+
+.lenguajes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #111;
+    }
+
+.heading.white {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    }
+
+.lenguajes .content {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+.lenguajes .content .lenguajesbx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    }
+
+.lenguajes .content .lenguajesbx:hover {
+    background: #2196f3;
+    }
+
+.lenguajes .content .lenguajesbx img {
+    max-width: 80px;
+    filter: invert(1);
+    }
+
+.lenguajes .content .lenguajesbx h2 {
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+.pointer:hover {
+    cursor: pointer;
+    }
+
+/* ++++++++++++++++++++ CAJA MODAL ++++++++++++++++++++ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; /* Ubicación de la caja */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    }
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+    }
+
+@keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+    }
+
+.modal-content P {
+    font-size: 20px;
+    }
+
+/* Boton para cerrar modal */
+.close1, .close2,
+.close3, .close4,
+.close5, .close6 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 10px;
+    }
+
+
+.close1:hover, .close2:hover,
+.close3:hover, .close4:hover,
+.close5:hover, .close6:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+.close1:focus, .close2:focus,
+.close3:focus, .close4:focus,
+.close5:focus, .close6:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+/* Fin Seccion 3 - Lenguajes */
+
+/* Seccion 4 - Trabajos / Proyectos */
+
+.trabajo {
+    margin-top: -30px;
+    background-color: #FFFFFF;
+    background-image: url("../img/prisma-fonfo.svg");
+    background-size: cover;
+    }
+
+.trabajo .cont-trabajo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+.cont-titulo .title {
+    padding-top: -520px;
+    }
+
+.trabajo .cont-trabajo .trabajobx {
+    width: 35%;
+    padding: 20px;
+    }
+
+.trabajo .cont-trabajo .trabajobx img {
+    max-width: 100%;
+    transition: 0.3s ease-in-out;background-size: contain;
+    border: 2px solid #3d3d3d;
+    border-radius: 10px;
+    }
+
+.trabajo .cont-trabajo .trabajobx img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    }
+
+.contbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+/* Fin Seccion 4 - Trabajos / Proyectos */
+
+/* Seccion 5 - Contacto */
+
+.contacto {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.348), hsl(0, 0%, 0%)),url(../img/contacto.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    }
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.contenedor {
+    width: 80%;
+    padding: 20px;
+    }
+
+.contenedor h2 {
+    width: 100%;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+.contenedor .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    }
+
+.contenedor .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+    }
+
+.contenedor .row100 .caja-input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+    color: #fff;
+    }
+
+.contenedor .row100 .caja-input input,
+.contenedor .row100 .caja-input.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1; 
+    color: #000;
+    }
+
+.contenedor .row100 .caja-input .texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    }
+
+.contenedor .row100 .caja-input input:focus + .texto,
+.contenedor .row100 .caja-input input:valid + .texto {
+    top: -35px;
+    left: -10px;
+    }
+
+.contenedor .row100 .caja-input .linea {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    }
+
+.contenedor .row100 .caja-input input:focus ~ .linea,
+.contenedor .row100 .caja-input input:valid ~ .linea {
+    height: 100%;
+    }
+
+.contenedor .row100 .caja-input.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    }
+
+.contenedor .row100 .caja-input.textarea textarea {
+    height: 100%;
+    resize: none;
+    }
+
+.contenedor .row100 .caja-input textarea:focus + .texto,
+.contenedor .row100 .caja-input textarea:valid + .texto {
+    top: -35px;
+    left: -10px;
+    }
+
+.contenedor .row100 .caja-input textarea:focus ~ .linea,
+.contenedor .row100 .caja-input textarea:valid ~ .linea {
+    height: 100%;
+    }
+
+.btncontacto {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+    }
+
+.btncontacto:hover {
+    background: #dadada;
+    }
+
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    }
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+        header,
+        header.sticky {
+            padding: 20px 50px;
+            z-index: 1000;
+            }
+            
+        .menu {
+            position: fixed;
+            top: 75px;
+            left: -100%;
+            display: block;
+            padding: 100px 50px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            transition: 0.5s;
+            z-index: 999;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            overflow: auto;
+            }
+            
+        .menu.active {
+            left: 0;
+            }
+            
+        header ul li a {
+            color: #111;
+            font-size: 24px;
+            margin: 10px;
+            }
+
+        .toggle {
+            width: 40px;
+            height: 40px;
+            background-image: url("menu.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+            }
+
+        .toggle.active {
+            background-image: url("close.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            cursor: pointer;
+            }
+
+        header.sticky .toggle {
+            filter: invert(1);
+            }
+
+        section {
+            padding: 100px 10px;
+            }
+
+        .banner {
+            padding: 150px 50px 100px;
+            }
+
+        .banner h2 {
+            font-size: 1.5em;
+            }
+
+        .banner h3 {
+            font-size: 1.5em;
+            }
+
+        .titulobx{            
+            margin-bottom: -30px;
+            }
+
+        .btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 15px;
+            }
+
+        /* SECCION SOBRE MI */    
+        
+        .cont-svg-perfil .img-perfil {
+            display: flex;
+            margin: auto;
+            padding-bottom: 40px;
+            }
+        
+        .cont-titulo h2{
+            font-size: 24px;
+            }
+
+        .contenedor-sm {
+            display: block;
+            }
+        
+        .contentbxpf {
+            padding-right: 0;
+            text-align: justify;
+            }
+        
+        .contentbxpf h3 {
+            font-size: 22px;
+            text-align: center;
+            }
+        
+        .img-dev {
+            padding-top: 20px;
+            }
+
+        .contdescarga {
+            margin-top: 20px;
+            }
+
+        .btn-descarga {
+            text-align: center;
+            display: block;
+            }
+
+        /* REDES */
+        .wrapper{
+            padding-top: 45px;
+            }
+        .wrapper .icon{
+            margin: 0 10px;
+            }
+
+        .wrapper .icon span{
+            height: 55px;
+            width: 55px;
+            }
+
+        .wrapper .icon span i{
+            line-height: 55px;
+            font-size: 30px;
+            }
+
+        .modal-content P {
+            font-size: 15px;
+            }
+
+       /* SECCION TRAPAJOS - PROYECTOS */
+
+        .trabajo .cont-trabajo .trabajobx {
+            width: 50%;
+            padding: 5px;
+            }
+        
+        .trabajo .cont-trabajo .trabajobx img {
+            max-width: 100%;
+            }
+    }
+
+@media (max-width: 600px){
+        header,
+        header.sticky {
+            padding: 20px 20px;
+            }
+
+        .menu {
+            position: fixed;
+            top: 75px;
+            left: -100%;
+            display: block;
+            padding: 100px 50px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            transition: 0.5s;
+            z-index: 999;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            overflow: auto;
+            }
+            
+        .menu.active {
+            left: 0;
+            }
+            
+        header ul li a {
+            color: #111;
+            font-size: 24px;
+            margin: 10px;
+            }
+
+        header.sticky .toggle {
+            filter: invert(1);
+            }
+
+        .banner {
+            padding: 150px 20px 100px;
+            }
+            
+        .banner h2 span {
+            font-size: 1.2em;
+            font-weight: 700;
+            }
+            
+        .banner h3 {
+            font-size: 1.4em;
+            }
+            
+        .titulobx{
+            white-space: normal;
+            margin-bottom: -30px;
+            font-size: 14px;
+            }
+                
+        .btn {
+            margin-top: 13px;
+            font-size: 15px;
+            }
+
+        section {
+            padding: 100px 20px;
+            }
+
+        /* SECCION CONTACTO */
+        .contenedor {
+            width: 90%;
+            padding: 2px;
+            }
+
+        .contenedor h2 {
+            font-size: 26px;
+            }
+
+        .contenedor .row100 {
+            width: 95%;
+            }
+        
+        .contenedor .row100 .col {
+            width: 95%;
+            }
+        
+        .contenedor .row100 .caja-input {
+            width: 95%;
+            }
+                
+        .contenedor .row100 .caja-input input,
+        .contenedor .row100 .caja-input.textarea textarea {
+            width: 95%;
+            font-size: 14px;
+            }
+
+        .contenedor .row100 .caja-input .texto {
+            font-size: 16px;
+            }
+            
+        .contenedor .row100 .caja-input.textarea {
+            width: 95%;
+            }
+
+        .copyright {
+            font-size: 12px;
+            }
+    }
