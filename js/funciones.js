@@ -5,6 +5,7 @@ var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
 var modal5 = document.getElementById("myModal5");
 var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
 
 // Obtener el boton que abre el modal
 var btn1 = document.getElementById("myBtn1");
@@ -13,6 +14,7 @@ var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
 
 // Obtener el elemento (span X) que cierra el modal
 var span1 = document.getElementsByClassName("close1")[0];
@@ -21,6 +23,7 @@ var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
 var span5 = document.getElementsByClassName("close5")[0];
 var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
             
 // Cuando el usuario hace clic en el botón abre el modal
 btn1.onclick = function() {
@@ -40,6 +43,9 @@ btn5.onclick = function() {
     }
 btn6.onclick = function() {
     modal6.style.display = "block";
+    }
+btn7.onclick = function() {
+    modal7.style.display = "block";
     }
 
 // Cuando el usuario hace clic en el span (X) cierra el modal
@@ -61,6 +67,9 @@ span5.onclick = function() {
 span6.onclick = function() {
     modal6.style.display = "none";
     }
+span7.onclick = function() {
+    modal7.style.display = "none";
+    }
 
 // Cuando el usuario hace clic fuera del modal cierra el mismo
 window.onclick = function(event) {
@@ -81,5 +90,8 @@ window.onclick = function(event) {
     }
     if (event.target == modal6) {
     modal6.style.display = "none";
+    }
+    if (event.target == modal7) {
+    modal7.style.display = "none";
     }
 }
