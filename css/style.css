@@ -415,7 +415,8 @@ a {
 /* Boton para cerrar modal */
 .close1, .close2,
 .close3, .close4,
-.close5, .close6 {
+.close5, .close6,
+.close7 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -426,7 +427,8 @@ a {
 
 .close1:hover, .close2:hover,
 .close3:hover, .close4:hover,
-.close5:hover, .close6:hover{
+.close5:hover, .close6:hover,
+.close7:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -434,7 +436,8 @@ a {
 
 .close1:focus, .close2:focus,
 .close3:focus, .close4:focus,
-.close5:focus, .close6:focus {
+.close5:focus, .close6:focus,
+.close7:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
