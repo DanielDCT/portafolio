@@ -1,0 +1,26 @@
+<body>
+    <!-- código para capturar el evento de desplazamiento y realizar el desplazamiento suave -->
+    <app-header (scrollEvent)="scrollToComponent($event)"></app-header>
+
+    <section id="incio">
+        <app-banner (scrollEvent)="scrollToComponent($event)"></app-banner>
+    </section>
+
+    <section id="about">
+        <app-about (scrollEvent)="scrollToComponent($event)"></app-about>
+    </section>
+
+    <section id="lenguajes">
+        <app-lenguajes></app-lenguajes>
+    </section>
+
+    <section id="proyectos">
+        <app-proyectos></app-proyectos>
+    </section>
+
+    <section id="contact">
+        <app-contact></app-contact>
+    </section>
+
+    <app-footer></app-footer>
+</body>

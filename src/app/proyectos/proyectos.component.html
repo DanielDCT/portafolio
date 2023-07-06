@@ -1,0 +1,36 @@
+<section>
+    <div class="titulos">
+        <h2>PROYECTOS</h2>
+    </div>
+    <div class="descripcion">
+        <p>¡Espero que disfrutes viendo mis proyectos tanto como yo disfruté creándolos!</p>
+    </div>
+    <div class="container">
+        <!-- Bucle *ngFor para recorrer la lista de proyectos y crear una tarjeta por cada uno / fadeIn es el llamado a la animación
+        definida en el .ts -->
+        <div *ngFor="let proyecto of proyectos | slice:0:visibleCardsCount" class="card" [@fadeIn]>
+            <!-- Encabezado de la tarjeta -->
+            <div class="card-img">
+                <a [href]="proyecto.link" target="_blank">
+                    <img [src]="proyecto.image" alt="Project Image" class="project-image">
+                </a>
+            </div>
+            <!-- Cuerpo de la tarjeta -->
+            <div class="card-body">
+                <h3 class="project-title">{{ proyecto.title }}</h3>
+                <p class="project-description">{{ proyecto.description }}</p>
+                <div class="project-tags">
+                    <span *ngFor="let tag of proyecto.tags" class="tag">{{ tag }}</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a [href]="proyecto.link" target="_blank" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor del botón "Cargar más" -->
+    <div class="content-button" *ngIf="visibleCardsCount < proyectos.length">
+        <!-- Botón "Cargar más" -->
+        <a class="animate-button" (click)="loadMoreCards()">Cargar más</a>
+    </div>
+</section>

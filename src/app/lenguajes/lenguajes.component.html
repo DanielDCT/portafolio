@@ -1,0 +1,18 @@
+<section>
+    <div class="titulos"><h2>LENGUAJES</h2></div>
+    <div class="descripcion">
+        <p>
+        En esta sección encontrarás los lenguajes de programación que domino y utilizo en mis proyectos. 
+        Cada lenguaje tiene su propia importancia y utilidad, y me apasiona aprender nuevas tecnologías para seguir 
+        mejorando mis habilidades como desarrollador.
+        </p>
+    </div>
+    <div class="container">
+        <div class="lenguajes-container">
+            <div class="lenguaje" *ngFor="let lenguaje of lenguajes">
+                <i [class]="lenguaje.icono"></i>
+                <span>{{ lenguaje.nombre }}</span>
+            </div>
+        </div>
+    </div>
+</section>

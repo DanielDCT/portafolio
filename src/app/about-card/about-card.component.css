@@ -1,0 +1,146 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 5px;
+    z-index: 3;
+    background: #1f034253;
+    backdrop-filter: blur(20px);
+    }
+
+hr {
+    border: 1px solid black;
+    height: 1px;
+    }
+
+.card .cont-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.card .cont-img img {
+    border: 6px outset #0c020f;
+    padding: 2px;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    }
+
+.cont-content {
+    text-align: center;
+    }
+
+.cont-content .name {
+    padding-top: 10px;
+    }
+
+.cont-content p {
+    font-size: 15px;
+    }
+
+.cont-social {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 25px;
+    }
+
+.cont-social a {
+    color: #000; /* Color de los iconos */
+    font-size: 24px;
+    }
+
+.cont-social i {
+    transition: 0.2s ease;
+    }
+    
+.cont-social a:nth-child(1) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.211));
+    color: #06b446;
+    box-shadow: 0 0 0;
+    }
+
+.cont-social a:nth-child(2) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.529));
+    color: #211F1F; /* GitHub - negro */
+    box-shadow: 0 0 0;
+    }
+
+.cont-social a:nth-child(3) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.529));
+    color: #3B5998; /* Facebook - azul oscuro */
+    box-shadow: 0 0 0;
+    }
+
+.cont-social a:nth-child(4) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.529));
+    color: #C13584; /* Instagram - rosa */
+    box-shadow: 0 0 0;
+    }
+
+.cont-social a:nth-child(5) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.529));
+    color: #1DA1F2; /* Twitter - azul claro */
+    box-shadow: 0 0 0;
+    }
+
+@media (max-width: 600px) {
+    .card {
+        height: 330px;
+        border-radius: 10px;
+        }
+
+    .card .cont-img {
+        height: 160px;
+        }
+
+    .card .cont-img img {
+        border: 3px solid #000;
+        width: 140px;
+        height: 140px;
+        }
+
+    .cont-content .name {
+        font-size: 16px;        
+        }
+
+    .cont-content p {
+        font-size: 12px;
+        }
+}
+
+@media (max-width: 991px) and (max-height:321px){
+    .card {
+        height: 330px;
+        border-radius: 10px;
+        }
+
+    .card .cont-img {
+        height: 160px;
+        }
+
+    .card .cont-img img {
+        width: 140px;
+        height: 140px;
+        }
+
+    .cont-content .name {
+        font-size: 16px;        
+        }
+
+    .cont-content p {
+        font-size: 12px;
+        }
+}

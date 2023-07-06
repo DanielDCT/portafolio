@@ -1,0 +1,141 @@
+.form-group {
+    min-width: 100%;
+    margin-bottom: 20px;
+    z-index: 2;
+    --color: #ffffff;
+    }
+    
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color);
+    }
+
+input[type="text"],
+input[type="email"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #82578f;
+    border-radius: 4px;
+    background-color: #4d215b;
+    color: var(--color);
+    }
+
+textarea {
+    height: 120px;
+    resize: none;
+    }
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 3px solid #82578f;
+    }
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-weight: 600;
+    }
+
+button {
+    padding: 10px 40px;
+    background-color: #710493;
+    color: var(--color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease;
+    }
+
+button:hover {
+    background-color: #56056f;
+    }
+
+button:disabled {
+    background-color: #4d215b;
+    cursor: not-allowed;
+    }
+
+.modal-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    }
+
+.close {
+    padding: 10px 40px;
+    background-color: #212336;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease;
+    }
+
+.close:hover {
+    background-color: #191b31;
+    }
+
+.modal-body p{
+    text-align: center;
+    font-weight: 600;
+    }
+
+.success-icon {
+    width: 100%;
+    text-align: center;
+    font-size: 78px;
+    color: #57bb8a;
+    margin-bottom: 20px;
+    transition: .3s ease-in-out;
+    }
+
+.success-icon i:hover {
+    box-shadow: 1px 1px 1px #ffffff00;
+    }
+
+.success-message {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    }
+
+@media (max-width: 991px) {
+    .formbx {
+        min-width: 100%;
+        }
+    
+    label {
+        font-size: 13px;
+        }
+    
+    textarea {
+        height: 120px;
+        }
+    
+    .error-message {
+        font-size: 13px;
+        }
+    }
+
+@media (max-width: 991px) and (max-height:321px){
+    .formbx {
+        min-width: 100%;
+        }
+    
+    label {
+        font-size: 13px;
+        }
+    
+    textarea {
+        height: 120px;
+        }
+    
+    .error-message {
+        font-size: 13px;
+        }
+    }

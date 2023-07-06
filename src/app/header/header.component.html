@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" [ngClass]="{ 'navbar-scrolled': navbarScrolled }" #navbar>
+    <a mat-button (click)="scrollToComponent('incio')" class="logo">PORTAFOLIO</a>
+    <div class="spacer"></div>
+    <div class="menu-container" [class.open]="menuOpen">
+        <a mat-button (click)="scrollToComponent('incio')">Inicio</a>
+        <a mat-button (click)="scrollToComponent('about')">Sobre Mi</a>
+        <a mat-button (click)="scrollToComponent('lenguajes')">Lenguajes</a>
+        <a mat-button (click)="scrollToComponent('proyectos')">Proyectos</a>
+        <a mat-button (click)="scrollToComponent('contact')">Contacto</a>
+        <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download>Descargar CV</a>
+    </div>
+    <button mat-icon-button (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen ? 'true' : 'false'"
+        [attr.aria-label]="menuOpen ? 'Cerrar menú' : 'Abrir menú'" class="menu-button">
+        <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+</mat-toolbar>

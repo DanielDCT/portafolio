@@ -1,0 +1,221 @@
+.mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    padding: 45px 40px;
+    transition: background-color 0.5s ease;
+    align-items: center;
+    z-index: 999;
+    transition: .4s ease-in-out;
+    }
+
+.logo {
+    margin-right: auto;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 700;
+    }
+
+mat-icon {
+    color: aliceblue;
+    font-size: 35px;
+    width: 40px;
+    height: 35px;
+    background: #33333300;
+    margin-top: -5px;
+    filter: drop-shadow(0 0 0.2rem rgb(204, 155, 143));
+    }
+
+.menu-container.open {
+    animation: slidein .4s ease;
+    }
+
+@keyframes slidein {
+    from {
+        margin-top:-50px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+    }
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    }
+
+.menu-container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    }
+
+.menu-container a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #eae6e6;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+.menu-container a:hover::before {
+    width: 100%;
+    left: 0;
+    }
+
+.menu-container .download-button {
+    background-color: transparent;
+    border: 2px solid #82578f;
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 17px;
+    padding: 0 15px;
+    transition: .3s ease-in-out;
+    }
+
+.menu-container .download-button:hover {
+    background-color: #e5e9eb;
+    border: 2px solid aliceblue;
+    color: #000;
+    }
+
+.menu-container a:hover {
+    color: #d7d7da;
+    }
+
+.menu-button {
+    display: none;
+    }
+
+.navbar-scrolled {
+    background: #280234;
+    padding: 35px 40px;
+    }
+
+.navbar-scrolled .download-button {
+    background: #4d215b;
+    }
+
+@media (max-width: 991px) {
+    .mat-toolbar {
+        background: rgb(40, 2, 52);
+        padding: 15px 20px;
+        }
+
+    .logo {
+        font-size: 15px;
+        }
+
+    .menu-container {
+        display: none;
+        }
+
+    .menu-button {
+        display: block;
+        margin-left: 10px;
+        }
+
+    mat-icon {
+        margin-left: -7px;
+        }
+
+    .menu-container.open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px 10px 5px 10px;
+        }
+
+    .menu-container a {
+        margin: 0 20px 20px 30px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        }
+
+    .menu-container a::before {
+        background-color: #0e0e0e;
+        }
+
+    .menu-container a:hover {
+        color: #000000;
+        }
+
+    .menu-container .download-button {
+        border: 3px solid rgb(0, 0, 0);
+        color: #000000;
+        font-weight: 600;
+        margin-right: 20px;
+        transition: .3s ease-in-out;
+        }
+
+    .menu-container .download-button {
+        background: transparent;
+        border: 0;
+        border-top: 3px solid #82578f;
+        border-bottom: 3px solid #82578f;
+        }
+    }
+
+@media (max-width: 991px) and (max-height:321px){
+    .mat-toolbar {
+        background: rgb(40, 2, 52);
+        padding: 15px 20px;
+        }
+
+    .logo {
+        font-size: 15px;
+        }
+
+    .menu-container {
+        display: none;
+        }
+
+    .menu-button {
+        display: block;
+        margin-left: 10px;
+        }
+
+    mat-icon {
+        margin-left: -7px;
+        }
+
+    .menu-container.open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 10px 0 10px;
+        max-height: 260px; /* Establece una altura máxima para el menú abierto */
+        overflow-y: auto; 
+        }
+
+    .menu-container a {
+        margin: 0 20px 20px 30px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        height: 22px;
+        }
+    }
