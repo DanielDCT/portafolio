@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     ProyectosComponent,
     ContactComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
