@@ -41,6 +41,13 @@ export class ProyectosComponent {
   // Lista de proyectos
   proyectos: Proyecto[] = [
     {
+      title: 'PokeApi',
+      description: 'Explora la API de Pokemon en este sitio web con un buscador funcional y un paginador que facilita la navegación para ver todos los Pokemons disponibles',
+      image: '../../assets/images/proyectos/proyecto15.jpg',
+      tags: ['ANGULAR', 'TS', 'HTML5' ,'CSS3'],
+      link: 'https://pokeapidaniel.netlify.app/',
+    },
+    {
       title: 'Segundo Portafolio',
       description: 'Este es el segundo portafolio que desarrollé para demostrar mis habilidades como programador frontend jr, con un diseño moderno, sencillo, minimalista y atractivo, con un formulario de contacto funcional',
       image: '../../assets/images/proyectos/segundo-portafolio.jpg',
@@ -111,18 +118,18 @@ export class ProyectosComponent {
       link: 'https://danieldct.github.io/login/',
     },
     {
-      title: 'Calculadora del IMC',
-      description: 'Esta calculadora web básica ha sido desarrollada con el propósito de calcular el IMC (Indice de Masa Corporal) de una persona. Con un diseño sencillo y fácil de usar.',
-      image: '../../assets/images/proyectos/proyecto08.jpg',
-      tags: ['HTML5', 'CSS3', 'JAVASCRIPT', 'GIT'],
-      link: 'https://danieldct.github.io/calculadora-imc/',
-    },
-    {
       title: 'Mi primer Portafolio',
       description: 'Este es el primer portafolio que desarrollé para mostrar mis primeras habilidades y pasos como programador frontend jr, con un diseño sencillo y atractivo',
       image: '../../assets/images/proyectos/primer-portafolio.jpg',
       tags: ['HTML5', 'CSS3', 'JAVASCRIPT' ,'GIT'],
       link: 'https://danieldct.github.io/primer-portafolio/',
+    },
+    {
+      title: 'Calculadora del IMC',
+      description: 'Esta calculadora web básica ha sido desarrollada con el propósito de calcular el IMC (Indice de Masa Corporal) de una persona. Con un diseño sencillo y fácil de usar.',
+      image: '../../assets/images/proyectos/proyecto08.jpg',
+      tags: ['HTML5', 'CSS3', 'JAVASCRIPT', 'GIT'],
+      link: 'https://danieldct.github.io/calculadora-imc/',
     },
     {
       title: 'Login & Signup PHP',
