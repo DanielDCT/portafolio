@@ -41,6 +41,13 @@ export class ProyectosComponent {
   // Lista de proyectos
   proyectos: Proyecto[] = [
     {
+      title: 'Lista de Tareas',
+      description: 'Organiza tareas con estilo en esta aplicación web minimalista. Agrega y elimina fácilmente. Gestiona tu productividad con simplicidad',
+      image: '../../assets/images/proyectos/proyecto16.webp',
+      tags: ['HTML5' ,'CSS3', 'JAVASCRIPT'],
+      link: 'https://danieldct.github.io/lista-de-tareas/',
+    },
+    {
       title: 'PokeApi',
       description: 'Explora la API de Pokemon en este sitio web con un buscador funcional y un paginador que facilita la navegación para ver todos los Pokemons disponibles',
       image: '../../assets/images/proyectos/proyecto15.webp',
