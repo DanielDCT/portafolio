@@ -22,6 +22,7 @@ import { FormComponent } from './form/form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { CommentsComponent } from './comments/comments.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CommentsComponent } from './comments/comments.component';
     ContactComponent,
     FormComponent,
     FooterComponent,
-    CommentsComponent
+    CommentsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

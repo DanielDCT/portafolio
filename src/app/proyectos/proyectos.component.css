@@ -124,6 +124,7 @@ section {
 .btn:hover {
     background-color: #4d125f;
     }
+
 .content-button {
     margin-top: 30px;
     position: relative;
@@ -155,7 +156,7 @@ section {
 .content-button a:hover {
     color: var(--color);
     }
-    
+
 .animate-button::after, .animate-button::before {
     content: '';
     display: block;
@@ -168,7 +169,7 @@ section {
     background-color: var(--color2);
     transition: .8s ease;
     }
-    
+
 .content-button a::before {
     top: -1em;
     left: -1em;
@@ -219,38 +220,42 @@ section {
         margin-top: 40px;
         row-gap: 30px;
         }
-    
+
     .card-img {
         height: 160px;
         }
-    
+
     .card-body {
         padding: 15px;
         }
-    
+
     .project-title {
         font-size: 16px;
         }
-    
+
     .project-description {
         height: 150px;
         font-size: 12px;
         }
-    
+
     .tag {
         font-size: 11px;
         }
-    
+
     .card-footer {
         border-bottom: 1px solid #939292;
         }
-    
+
     .btn {
         font-size: 12px;
         }
 }
 
 @media (max-width: 991px) and (max-height:321px){
+    section {
+        padding: 60px 15px;
+    }
+
     .titulos h2 {
         font-size: 16px;
         }
@@ -263,8 +268,12 @@ section {
 
     .container {
         margin-top: 40px;
-        row-gap: 30px;
+        gap: 15px 10px;
         }
+
+    .card {
+        width: 250px;
+    }
 
     .card-img {
         height: 160px;
@@ -284,7 +293,7 @@ section {
         }
 
     .tag {
-        font-size: 11px;
+        font-size: 9px;
         }
 
     .card-footer {

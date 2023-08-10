@@ -1,0 +1,168 @@
+.container {
+    padding: 20px 0;
+    position: relative;
+    z-index: 99;
+    }
+
+.titulos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    }
+
+.titulos::before,
+.titulos::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 30%; /* Ancho de las líneas */
+    background-color: #000; /* Color de las líneas */
+    }
+
+.titulos::before {
+    left: 9%;
+    }
+
+.titulos::after {
+    right: 9%;
+    }
+
+.titulos h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Carter One', cursive;
+    width: 200px;
+    text-align: center;
+    }
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    gap: 20px;
+    }
+
+.service {
+    flex: 1 1 calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregado de sombra */
+    transition: .2s ease-in-out;
+    }
+
+.service:hover {
+    transform: translateY(-5px); /* Cambio de posición en el eje Y al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Cambio de sombra al hacer hover */
+    }
+
+.service h3 {
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    }
+
+.service i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #5a069b; /* Cambio de color del icono */
+    }
+
+.service p {
+    color: #333; /* Cambio de color del texto */
+    font-size: 16px;
+    line-height: 1.5;
+    }
+
+@media (max-width: 820px) {
+    .container {
+        padding: 10px 0;
+        }
+
+    .service {
+        flex: 1 1 calc(50% - 20px);
+        margin-bottom: 5px;
+    }
+
+    .titulos::before {
+        left: 2%;
+        }
+
+    .titulos::after {
+        right: 2%;
+        }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 0;
+        }
+
+    .titulos {
+        margin-top: 25px;
+        padding: 0px;
+    }
+
+    .titulos::before,
+    .titulos::after {
+        width: 27%; /* Ancho de las líneas */
+        }
+
+    .titulos h2 {
+        font-size: 16px;
+        }
+
+    .services-container {
+        margin: 5px;
+        gap: 15px;
+        }
+
+    .service {
+        flex: 1 1 calc(100% - 20px);
+        }
+
+    .service h3 {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+        }
+
+    .service i {
+        font-size: 38px;
+        }
+
+    .service p {
+        font-size: 14px;
+        }
+}
+
+@media (max-width: 991px) and (max-height:321px){
+    .titulos h2 {
+        font-size: 16px;
+        }
+
+    .service h3 {
+        font-size: 14px;
+        letter-spacing: 1.1px;
+        }
+
+    .service i {
+        font-size: 38px;
+        }
+
+    .service p {
+        font-size: 14px;
+        }
+}
