@@ -15,6 +15,10 @@ export class HeaderComponent {
 
   scrollToComponent(elementId: string): void {
     this.scrollEvent.emit(elementId);
+    // Cierra el menú después de x segundo (0 milisegundos)
+    setTimeout(() => {
+      this.menuOpen = false;
+    }, 0);
   }
 
   // ********************************************************
@@ -31,5 +35,4 @@ export class HeaderComponent {
       this.navbarScrolled = false;
     }
   }
-
 }

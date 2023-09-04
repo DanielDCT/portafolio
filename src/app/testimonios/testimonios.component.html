@@ -1,0 +1,21 @@
+<section class="testimonios" id="testimonios">
+    <div class="titulos">
+        <h2>TESTIMONIOS</h2>
+    </div>
+    <div class="slider-container container">
+        <i class="fas fa-arrow-left slider-arrow" id="before" (click)="anteriorTestimonio()"></i>
+
+        <section class="slider-body" *ngFor="let testimonio of testimonios; let i = index" [class.slider-body--show]="i === testimonioActual">
+            <div class="slider-texts">
+                <h2 class="subtitulo">{{ testimonio.nombre }}</h2>
+                <p class="testimonio-text">{{ testimonio.mensaje }}</p>
+                <a class="testimonio-url" [href]= 'testimonio.web' target="_blank">Ir a la página</a>
+            </div>
+            <figure class="slider-picture">
+                <img [src]= 'testimonio.imagen' class="slider-img">
+            </figure>
+        </section>
+
+        <i class="fas fa-arrow-right slider-arrow" id="next" (click)="siguienteTestimonio()"></i>
+    </div>
+</section>

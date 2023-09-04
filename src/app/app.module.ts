@@ -23,6 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { CommentsComponent } from './comments/comments.component';
 import { ServicesComponent } from './services/services.component';
+import { TestimoniosComponent } from './testimonios/testimonios.component';
+import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ServicesComponent } from './services/services.component';
     FormComponent,
     FooterComponent,
     CommentsComponent,
-    ServicesComponent
+    ServicesComponent,
+    TestimoniosComponent,
+    WhatsappButtonComponent
   ],
   imports: [
     BrowserModule,

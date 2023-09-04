@@ -1,13 +1,25 @@
 <mat-toolbar color="primary" [ngClass]="{ 'navbar-scrolled': navbarScrolled }" #navbar>
-    <a mat-button (click)="scrollToComponent('incio')" class="logo">PORTAFOLIO</a>
+    <a mat-button (click)="scrollToComponent('inicio')" class="logo">PORTAFOLIO</a>
     <div class="spacer"></div>
     <div class="menu-container" [class.open]="menuOpen">
-        <a mat-button (click)="scrollToComponent('inicio')">Inicio</a>
-        <a mat-button (click)="scrollToComponent('about')">Sobre Mi</a>
-        <a mat-button (click)="scrollToComponent('lenguajes')">Lenguajes</a>
-        <a mat-button (click)="scrollToComponent('proyectos')">Proyectos</a>
-        <a mat-button (click)="scrollToComponent('contact')">Contacto</a>
-        <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download>Descargar CV</a>
+        <a mat-button (click)="scrollToComponent('about')">
+            <mat-icon class="icon">person</mat-icon> Sobre Mi
+        </a>
+        <a mat-button (click)="scrollToComponent('lenguajes')">
+            <mat-icon class="icon">code</mat-icon> Lenguajes
+        </a>
+        <a mat-button (click)="scrollToComponent('proyectos')">
+            <mat-icon class="icon"n>work</mat-icon> Proyectos
+        </a>
+        <a mat-button (click)="scrollToComponent('testimonios')">
+            <mat-icon class="icon">star</mat-icon> Testimonios
+        </a>
+        <a mat-button (click)="scrollToComponent('contact')">
+            <mat-icon class="icon">mail</mat-icon> Contacto
+        </a>
+        <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download>
+            <mat-icon class="icon">cloud_download</mat-icon> Descargar CV
+        </a>
     </div>
     <button mat-icon-button (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen ? 'true' : 'false'"
         [attr.aria-label]="menuOpen ? 'Cerrar menú' : 'Abrir menú'" class="menu-button">

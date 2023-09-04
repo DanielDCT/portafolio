@@ -28,20 +28,20 @@ mat-icon {
     height: 35px;
     background: #33333300;
     margin-top: -5px;
-    filter: drop-shadow(0 0 0.2rem rgb(204, 155, 143));
+    filter: drop-shadow(0 0 0.2rem #cc9b8f);
     }
 
 .menu-container.open {
-    animation: slidein .4s ease;
+    animation: slideInMenu 0.3s ease-in-out;
     }
 
-@keyframes slidein {
-    from {
-        margin-top:-50px;
+@keyframes slideInMenu {
+    0% {
+        transform: translateX(100%);
         opacity: 0;
     }
-    to {
-        margin-top: 0;
+    100% {
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -53,6 +53,7 @@ mat-icon {
 .menu-container {
     display: flex;
     align-items: center;
+    border-bottom-left-radius: 5px;
     }
 
 .menu-container a {
@@ -81,12 +82,22 @@ mat-icon {
     left: 0;
     }
 
+.menu-container a .icon { /* PARA LOS ICONOS QUE APARECEM SOLAMENTE EN VISTA MOVIL */
+    display: none;
+    position: relative;
+    top: 3px;
+    width: 20px;
+    font-size: 18px;
+    margin-right: 8px;
+    color: #000000;
+    filter: drop-shadow(0 0 0.2rem #cc9b8f00);
+    }
+
 .menu-container .download-button {
     background-color: transparent;
     border: 2px solid #82578f;
     color: #ffffff;
     font-weight: 600;
-    margin-right: 17px;
     padding: 0 15px;
     transition: .3s ease-in-out;
     }
@@ -114,7 +125,7 @@ mat-icon {
     background: #4d215b;
     }
 
-@media (max-width: 991px) {
+@media (max-width: 1050px) {
     .mat-toolbar {
         background: rgb(40, 2, 52);
         padding: 15px 20px;
@@ -148,9 +159,10 @@ mat-icon {
         }
 
     .menu-container a {
-        margin: 0 20px 20px 30px;
+        margin: 0 20px 20px 5px;
         color: rgb(0, 0, 0);
         font-weight: 600;
+        justify-content: left;
         }
 
     .menu-container a::before {
@@ -161,19 +173,17 @@ mat-icon {
         color: #000000;
         }
 
-    .menu-container .download-button {
-        border: 3px solid rgb(0, 0, 0);
-        color: #000000;
-        font-weight: 600;
-        margin-right: 20px;
-        transition: .3s ease-in-out;
+    .menu-container a .icon {
+        display: flex;
         }
 
     .menu-container .download-button {
+        color: #000;
+        padding: 0 9px;
         background: transparent;
         border: 0;
-        border-top: 3px solid #82578f;
-        border-bottom: 3px solid #82578f;
+        border-top: 0 solid #82578f00;
+        border-bottom: 0 solid #82578f00;
         }
     }
 
@@ -213,7 +223,7 @@ mat-icon {
         }
 
     .menu-container a {
-        margin: 0 20px 20px 30px;
+        margin: 0 20px 20px 20px;
         color: rgb(0, 0, 0);
         font-weight: 600;
         height: 22px;
