@@ -1,51 +1,17 @@
-section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 60px 45px;
-    --color: #ffffff;
-    }
-
 .titulos {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    }
-
-.titulos h2 {
-    font-size: 28px;
-    letter-spacing: 2px;
-    font-family: 'Carter One', cursive;
-    color: rgb(15, 15, 15);
-    width: 360px;
-    text-align: center;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    }
-
-.descripcion {
-    color: #000000;
-    width: 100%;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: .9px;
-    }
-
-.titulo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
+    margin-top: 40px;
     position: relative;
     }
 
-.titulo h3 {
+.titulos h3 {
     font-size: 22px;
     letter-spacing: 2px;
     font-family: 'Carter One', cursive;
-    width: 270px;
+    width: 250px;
     text-align: center;
     }
 
@@ -103,7 +69,27 @@ section {
     margin-bottom: 10px;
     }
 
+.project-client {
+    margin-bottom: 10px;
+    }
+
+.client {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777777;
+    }
+
+.testimonio {
+    color: #282828;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    }
+
 .project-tags {
+    margin-top: 5px;
     margin-bottom: 10px;
     }
 
@@ -142,96 +128,23 @@ section {
     background-color: #4d125f;
     }
 
-.content-button {
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-    }
-
-.content-button a {
-    --color2: #23043a;
-    padding: 1em 2.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 500;
-    font-size: 17px;
-    border: 2px solid var(--color2);
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color2);
-    z-index: 1;
-    text-decoration: none;
-    }
-
-.content-button a:hover {
-    color: var(--color);
-    }
-
-.animate-button::after, .animate-button::before {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color2);
-    transition: .8s ease;
-    }
-
-.content-button a::before {
-    top: -1em;
-    left: -1em;
-    }
-
-.content-button a::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-    }
-
-.content-button a:hover::before, .content-button a:hover::after {
-    height: 410px;
-    width: 410px;
-    }
-
-.content-button a:hover {
-    color: var(--color);
-    }
-
-.content-button a:active {
-    filter: brightness(.8);
-    }
-
 @media (max-width: 991px) {
     section {
-        padding: 40px 15px;
-    }
+        padding: 10px 0;
+        }
 
-    .content-button a {
-        --color2: #23043a;
-        padding: .6em 2.3em;
-        font-size: 14px;
+    .container {
+        margin-top: 10px;
+        row-gap: 30px;
         }
 }
 
 @media (max-width: 600px) {
-    .titulos h2 {
-        font-size: 16px;
+    .titulos {
+        margin-top: 0;
         }
 
-    .titulo {
-        margin-top: 10px;
-        }
-
-    .titulo h3 {
+    .titulos h3 {
         font-size: 16px;
         }
 
@@ -239,11 +152,6 @@ section {
         width: 100%;
         text-align: center;
         font-size: 13px;
-        }
-
-    .container {
-        margin-top: 10px;
-        row-gap: 30px;
         }
 
     .card-img {
@@ -260,6 +168,10 @@ section {
 
     .project-description {
         height: 150px;
+        font-size: 12px;
+        }
+
+    .client {
         font-size: 12px;
         }
 
@@ -281,11 +193,7 @@ section {
         padding: 60px 15px;
     }
 
-    .titulos h2 {
-        font-size: 16px;
-        }
-
-    .titulo h3 {
+    .titulos h3 {
         font-size: 16px;
         }
 
@@ -302,7 +210,7 @@ section {
 
     .card {
         width: 250px;
-    }
+        }
 
     .card-img {
         height: 160px;

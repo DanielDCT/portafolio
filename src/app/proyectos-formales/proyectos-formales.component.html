@@ -1,0 +1,32 @@
+<section>
+    <div class="titulos"><h3>Proyectos Formales</h3></div>
+    <div class="container">
+        <!-- Bucle *ngFor para recorrer la lista de proyectos y crear una tarjeta por cada uno / fadeIn es el llamado a la animación
+        definida en el .ts -->
+        <div *ngFor="let ProyectoFormal of proyectos" class="card">
+            <!-- Encabezado de la tarjeta -->
+            <div class="card-img">
+                <a [href]="ProyectoFormal.link" target="_blank">
+                    <img [src]="ProyectoFormal.image" alt="Project Image" class="project-image">
+                </a>
+            </div>
+            <!-- Cuerpo de la tarjeta -->
+            <div class="card-body">
+                <h3 class="project-title">{{ ProyectoFormal.title }}</h3>
+                <p class="project-description">{{ ProyectoFormal.description }}</p>
+                <hr>
+                <div class="project-client">
+                    <p class="client">{{ ProyectoFormal.client }}</p>
+                    <a class="testimonio" (click)="scrollToComponent('testimonios')">Ver Testimonio</a>
+                </div>
+                <hr>
+                <div class="project-tags">
+                    <span *ngFor="let tag of ProyectoFormal.tags" class="tag">{{ tag }}</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a [href]="ProyectoFormal.link" target="_blank" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+    </div>
+</section>

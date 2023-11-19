@@ -96,6 +96,12 @@ hr {
     box-shadow: 0 0 0;
     }
 
+.cont-social a:nth-child(6) i:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.529));
+    color: #0077B5; /* LinkedIn - azul */
+    box-shadow: 0 0 0;
+    }
+
 @media (max-width: 600px) {
     .card {
         height: 330px;
@@ -118,6 +124,10 @@ hr {
 
     .cont-content p {
         font-size: 12px;
+        }
+
+    .cont-social a {
+        font-size: 22px;
         }
 }
 

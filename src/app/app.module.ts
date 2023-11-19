@@ -8,7 +8,7 @@ import { BannerComponent } from './banner/banner.component';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar'; //ng add @angular/material
 import { MatIconModule } from '@angular/material/icon'; //ng add @angular/material
-import { MatButtonModule } from '@angular/material/button'; //ng add @angular/material
+import { MatButtonModule } from '@angular/material/button'; //ng add @angular/material>
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CirclesComponent } from './banner-circles/circles.component';
 import { AboutComponent } from './about/about.component';
@@ -25,6 +25,8 @@ import { CommentsComponent } from './comments/comments.component';
 import { ServicesComponent } from './services/services.component';
 import { TestimoniosComponent } from './testimonios/testimonios.component';
 import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
+import { ProyectosFormalesComponent } from './proyectos-formales/proyectos-formales.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.compo
     CommentsComponent,
     ServicesComponent,
     TestimoniosComponent,
-    WhatsappButtonComponent
+    WhatsappButtonComponent,
+    ProyectosFormalesComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
