@@ -76,6 +76,11 @@
     text-transform: capitalize;
     }
 
+.subtitulo sup {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    }
+
 .testimonio-text {
     font-weight: 300;
     font-size: 18px;
@@ -143,6 +148,10 @@ a:hover::before {
         text-align: center;
         }
 
+    .subtitulo sup {
+        font-size: 14px;
+        }
+
     .slider-texts {
         filter: drop-shadow(0 0 0.2rem #cc9b8f8c);
         }
@@ -182,6 +191,12 @@ a:hover::before {
     .subtitulo {
         font-size: 1.2rem;
         margin-bottom: 15px;
+        }
+
+    .subtitulo sup {
+        display: block;
+        margin: 10px 0 20px 0;
+        font-size: 12px;
         }
 
     .testimonio-text {

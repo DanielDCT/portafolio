@@ -7,12 +7,12 @@
 
         <section class="slider-body" *ngFor="let testimonio of testimonios; let i = index" [class.slider-body--show]="i === testimonioActual">
             <div class="slider-texts">
-                <h2 class="subtitulo">{{ testimonio.nombre }}</h2>
+                <h2 class="subtitulo">{{ testimonio.nombre }} <sup> {{ testimonio.cargo }} </sup></h2>
                 <p class="testimonio-text">{{ testimonio.mensaje }}</p>
                 <a class="testimonio-url" [href]= 'testimonio.web' target="_blank">Ir a la página</a>
             </div>
             <figure class="slider-picture">
-                <img [src]= 'testimonio.imagen' class="slider-img">
+                <img [src]= 'testimonio.imagen' class="slider-img" [alt]= "testimonio.altImg" [title]= "testimonio.titleImg" loading="lazy">
             </figure>
         </section>
 

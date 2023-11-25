@@ -6,9 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent {
-  @Output() scrollEvent = new EventEmitter<string>();
 
-  scrollToComponent(elementId: string): void {
-    this.scrollEvent.emit(elementId);
-  }
 }

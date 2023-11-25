@@ -6,9 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  @Output() scrollEvent = new EventEmitter<string>();
 
-  scrollToComponent(elementId: string): void {
-    this.scrollEvent.emit(elementId);
-  }
 }

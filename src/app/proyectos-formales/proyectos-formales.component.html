@@ -7,7 +7,8 @@
             <!-- Encabezado de la tarjeta -->
             <div class="card-img">
                 <a [href]="ProyectoFormal.link" target="_blank">
-                    <img [src]="ProyectoFormal.image" alt="Project Image" class="project-image">
+                    <img [src]="ProyectoFormal.image" class="project-image" [alt]= "ProyectoFormal.altImg" 
+                    [title]= "ProyectoFormal.titleImg"  loading="lazy">
                 </a>
             </div>
             <!-- Cuerpo de la tarjeta -->
@@ -17,7 +18,7 @@
                 <hr>
                 <div class="project-client">
                     <p class="client">{{ ProyectoFormal.client }}</p>
-                    <a class="testimonio" (click)="scrollToComponent('testimonios')">Ver Testimonio</a>
+                    <a class="testimonio" href="#testimonios">Ver Testimonio</a>
                 </div>
                 <hr>
                 <div class="project-tags">

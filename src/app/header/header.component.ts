@@ -10,19 +10,6 @@ export class HeaderComponent {
   navbarScrolled: boolean = false;
 
   constructor(private elementRef: ElementRef) {}
-  // Esto bloque es para para emitir el identificador del elemento al que se desea desplazar en lugar del elemento en sí
-  @Output() scrollEvent = new EventEmitter<string>();
-
-  scrollToComponent(elementId: string): void {
-    this.scrollEvent.emit(elementId);
-    // Cierra el menú después de x segundo (0 milisegundos)
-    setTimeout(() => {
-      this.menuOpen = false;
-    }, 0);
-  }
-
-  // ********************************************************
-
   // Este método se ejecuta cuando se realiza el evento 'scroll' en la ventana
   @HostListener('window:scroll')
   onWindowScroll() {

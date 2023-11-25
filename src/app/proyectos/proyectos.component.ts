@@ -7,6 +7,8 @@ interface Proyecto {
   image: string;
   tags: string[];
   link: string;
+  altImg: string;
+  titleImg: string;
 }
 
 @Component({
@@ -54,6 +56,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/tercer-portafolio.webp',
       tags: ['ANGULAR', 'TS', 'HTML5' ,'CSS', 'GIT'],
       link: 'https://portafoliodanieldct.netlify.app/',
+      altImg: 'Portafolio Daniel David Calderón Tinjaca',
+      titleImg: 'Portafolio Daniel David Calderón Tinjaca',
     },
     {
       title: 'Lista de Tareas',
@@ -61,6 +65,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto16.webp',
       tags: ['HTML5' ,'CSS', 'JAVASCRIPT'],
       link: 'https://danieldct.github.io/lista-de-tareas/',
+      altImg: 'Lista de Tareas',
+      titleImg: 'Lista de Tareas',
     },
     {
       title: 'PokeApi',
@@ -68,6 +74,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto15.webp',
       tags: ['ANGULAR', 'TS', 'HTML5' ,'CSS'],
       link: 'https://pokeapidaniel.netlify.app/',
+      altImg: 'PokeApi',
+      titleImg: 'PokeApi',
     },
     {
       title: 'Segundo Portafolio',
@@ -75,6 +83,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/segundo-portafolio.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT' ,'GIT'],
       link: 'https://danieldct.github.io/segundo-portafolio/',
+      altImg: 'Segundo Portafolio',
+      titleImg: 'Segundo Portafolio',
     },
     {
       title: 'Iron Core',
@@ -82,6 +92,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto14.webp',
       tags: ['Angular', 'HTML5', 'CSS', 'GIT'],
       link: 'https://ironcore.netlify.app/',
+      altImg: 'Iron Core',
+      titleImg: 'Iron Core',
     },
     {
       title: 'Panadela',
@@ -89,6 +101,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto13.webp',
       tags: ['Angular', 'HTML5', 'CSS', 'GIT'],
       link: 'https://panadela.netlify.app/',
+      altImg: 'Panadela',
+      titleImg: 'Panadela',
     },
     {
       title: 'Opticalia',
@@ -96,6 +110,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto12.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://opticalia.netlify.app/',
+      altImg: 'Opticalia',
+      titleImg: 'Opticalia',
     },
     {
       title: 'Traveling',
@@ -103,6 +119,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto11.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/traveling/',
+      altImg: 'Traveling',
+      titleImg: 'Traveling',
     },
     {
       title: 'Portafolio Fotográfico',
@@ -110,6 +128,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto10.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/fotography/',
+      altImg: 'Portafolio Fotográfico',
+      titleImg: 'Portafolio Fotográfico',
     },
     {
       title: 'Hamburking',
@@ -117,6 +137,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto09.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/hamburking/',
+      altImg: 'Hamburking',
+      titleImg: 'Hamburking',
     },
     {
       title: 'World Fitness',
@@ -124,6 +146,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto07.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/world-fitness/',
+      altImg: 'World Fitness',
+      titleImg: 'World Fitness',
     },
     {
       title: 'Tributo Chester Bennington',
@@ -131,6 +155,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto05.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/tributo-chester-bennington/',
+      altImg: 'Tributo Chester Bennington',
+      titleImg: 'Tributo Chester Bennington',
     },
     {
       title: 'Login & Signup',
@@ -138,6 +164,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto06.webp',
       tags: ['HTML5', 'CSS', 'GIT'],
       link: 'https://danieldct.github.io/login/',
+      altImg: 'Login & Signup',
+      titleImg: 'Login & Signup',
     },
     {
       title: 'Mi primer Portafolio',
@@ -145,6 +173,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/primer-portafolio.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT' ,'GIT'],
       link: 'https://danieldct.github.io/primer-portafolio/',
+      altImg: 'Primer Portafolio',
+      titleImg: 'Primer Portafolio',
     },
     {
       title: 'Calculadora del IMC',
@@ -152,6 +182,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto08.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/calculadora-imc/',
+      altImg: 'Calculadora del IMC',
+      titleImg: 'Calculadora del IMC',
     },
     {
       title: 'Login & Signup PHP',
@@ -159,6 +191,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto03.webp',
       tags: ['HTML5', 'CSS', 'PHP', 'MYSQL', 'GIT'],
       link: 'https://iniciosesionone.000webhostapp.com/login.php',
+      altImg: 'Login & Signup PHP',
+      titleImg: 'Login & Signup PHP',
     },
     {
       title: 'Reloj Digital',
@@ -166,6 +200,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto04.webp',
       tags: ['HTML5', 'CSS', 'GIT'],
       link: 'https://danieldct.github.io/relojdigital/',
+      altImg: 'Reloj Digital',
+      titleImg: 'Reloj Digital',
     },
     {
       title: 'Perimes',
@@ -173,6 +209,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto02.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT' ,'GIT'],
       link: 'https://danieldct.github.io/perimes/',
+      altImg: 'Perimes',
+      titleImg: 'Perimes',
     },
     {
       title: 'Calculadora Digital',
@@ -180,6 +218,8 @@ export class ProyectosComponent {
       image: '../../assets/images/proyectos/personales/proyecto01.webp',
       tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
       link: 'https://danieldct.github.io/Calculadora-JS/',
+      altImg: 'Calculadora Digital',
+      titleImg: 'Calculadora Digital',
     },
   ];
 }

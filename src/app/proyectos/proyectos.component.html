@@ -6,7 +6,7 @@
         <p>¡Espero que disfrutes viendo mis proyectos tanto como yo disfruté creándolos!</p>
     </div>
 
-    <!-- <app-proyectos-formales (scrollEvent)="scrollToComponent($event)"></app-proyectos-formales> -->
+    <!-- <app-proyectos-formales></app-proyectos-formales> -->
 
     <div class="titulo"><h3>Proyectos Personales</h3></div>
     <div class="container">
@@ -16,7 +16,7 @@
             <!-- Encabezado de la tarjeta -->
             <div class="card-img">
                 <a [href]="proyecto.link" target="_blank">
-                    <img [src]="proyecto.image" alt="Project Image" class="project-image">
+                    <img [src]="proyecto.image" class="project-image" [alt]= "proyecto.altImg" [title]= "proyecto.titleImg"  loading="lazy">
                 </a>
             </div>
             <!-- Cuerpo de la tarjeta -->

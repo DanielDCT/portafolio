@@ -1,17 +1,16 @@
 <body>
     <app-loader></app-loader>
 
-    <!-- código para capturar el evento de desplazamiento y realizar el desplazamiento suave -->
-    <app-header (scrollEvent)="scrollToComponent($event)"></app-header>
+    <app-header></app-header>
 
     <app-whatsapp-button></app-whatsapp-button>
 
     <section id="inicio">
-        <app-banner (scrollEvent)="scrollToComponent($event)"></app-banner>
+        <app-banner></app-banner>
     </section>
 
     <section id="about">
-        <app-about (scrollEvent)="scrollToComponent($event)"></app-about>
+        <app-about></app-about>
     </section>
 
     <section id="lenguajes">
