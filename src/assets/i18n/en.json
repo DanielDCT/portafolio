@@ -1,0 +1,173 @@
+{
+  "navbar": {
+    "logo": "PORTFOLIO",
+    "about": "About Me",
+    "languages": "Languages",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "banner": {
+    "mainTitle": "Web Portfolio",
+    "subtitle": "Junior Front-End Web Developer",
+    "description": "As a Front-End Web Developer, my mission is to transform your ideas into web experiences that will captivate your visitors and drive your business online. Explore my work and discover how I can take your projects to the next level.",
+    "projectsBtn": "Projects",
+    "aboutBtn": "About me"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "welcome": "Welcome to my web portfolio ...",
+    "description": "I'm Daniel David Calderon, a passionate Front-end Web Developer dedicated to creating unique user experiences. My goal is to design intuitive and attractive websites that provide an exceptional experience. Explore my web portfolio with projects that highlight my skills in Angular, HTML, CSS, and JavaScript to create responsive and optimized websites.",
+    "thanks": "Thank you for visiting my web portfolio and I hope you enjoy seeing my projects as much as I enjoyed creating them!",
+    "contactBtn": "CONTACT ME"
+  },
+  "aboutCard": {
+    "name": "Daniel Calderón",
+    "role": "Junior Front-End Web Developer"
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "name": "Attractive Websites",
+        "description": "Development of modern and visually attractive websites."
+      },
+      {
+        "name": "Responsive Design",
+        "description": "Creation of interfaces that adapt to different devices."
+      },
+      {
+        "name": "SEO Optimization",
+        "description": "Improve search engine positioning for greater visibility."
+      }
+    ]
+  },
+  "languages": {
+    "title": "LANGUAGES",
+    "description": "In this section you will find the programming languages I master and use in my projects. Each language has its own importance and utility, and I'm passionate about learning new technologies to continue improving my skills as a developer."
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "description": "I hope you enjoy viewing my projects as much as I enjoyed creating them!",
+    "personalProjects": "Personal Projects",
+    "viewProject": "View Project",
+    "loadMore": "Load More",
+    "items": [
+      {
+        "title": "Portfolio",
+        "description": "In my Web Portfolio, with a modern design, you will find all my projects that I have worked on, both personal and formal. Additionally, I have a testimonials section and a functional contact form."
+      },
+      {
+        "title": "Task List",
+        "description": "Organize tasks with style in this minimalist web application. Add and remove easily. Manage your productivity with simplicity"
+      },
+      {
+        "title": "PokeApi",
+        "description": "Explore the Pokemon API on this website with a functional search engine and a paginator that facilitates navigation to view all available Pokemons"
+      },
+      {
+        "title": "Second Portfolio",
+        "description": "This is the second portfolio I developed to demonstrate my skills as a junior frontend programmer, with a modern, simple, minimalist and attractive design, with a functional contact form"
+      },
+      {
+        "title": "Iron Core",
+        "description": "IronCore is a website designed to promote personal training services. With a modern and attractive design, it includes testimonials from satisfied clients and facilitates contact with the trainer."
+      },
+      {
+        "title": "Panadela",
+        "description": "Panadela is a website designed to promote cappuccinos. With a simple and attractive design, it includes reviews from satisfied customers and facilitates contact with the place."
+      },
+      {
+        "title": "Opticalia",
+        "description": "Opticalia is an e-commerce website designed to promote and sell glasses online. With a simple and attractive design, it includes reviews from satisfied customers and facilitates contact with the seller."
+      },
+      {
+        "title": "Traveling",
+        "description": "Traveling is a website to promote and display available flights providing flight information (Non-ecommerce). With a modern and attractive design, it includes customer reviews and facilitates contact with the agency."
+      },
+      {
+        "title": "Photography Portfolio",
+        "description": "This website was developed for the purpose of promoting the services of a photographer, exhibiting his most outstanding shots. With a modern and attractive design, it includes satisfied customer reviews and facilitates contact with the photographer."
+      },
+      {
+        "title": "Hamburking",
+        "description": "Hamburking is a website developed for the purpose of promoting restaurant burgers (Non-ecommerce). With a modern and attractive design, it includes satisfied customer reviews and facilitates contact with the restaurant."
+      },
+      {
+        "title": "World Fitness",
+        "description": "World Fitness is a website designed to promote a gym's services. With a simple design and provides an easy way to contact the team of trainers."
+      },
+      {
+        "title": "Chester Bennington Tribute",
+        "description": "This website was developed in memory of the vocalist of the Linkin Park band, Chester Bennington QEPD. With a simple and attractive design."
+      },
+      {
+        "title": "Login & Signup",
+        "description": "Design of a minimalist and attractive login and registration form. With the aim of being pleasant to the eye and easy to interact/use"
+      },
+      {
+        "title": "My First Portfolio",
+        "description": "This is the first portfolio I developed to showcase my first skills and steps as a junior frontend programmer, with a simple and attractive design"
+      },
+      {
+        "title": "BMI Calculator",
+        "description": "This basic web calculator was developed for the purpose of calculating a person's BMI (Body Mass Index). With a simple and easy to use design."
+      },
+      {
+        "title": "Login & Signup PHP",
+        "description": "Design of a minimalist, attractive and functional (basic) login and registration form. With the aim of being pleasant to the eye and easy to interact/use"
+      },
+      {
+        "title": "Digital Clock",
+        "description": "This website is a digital clock that displays the current time. The design is simple and minimalist, making it easy to read."
+      },
+      {
+        "title": "Perimes",
+        "description": "Perimes is a simple and very basic website with content related to series, movies and anime, with a simple design with a functional contact form that facilitates contact with the web administrator"
+      },
+      {
+        "title": "Digital Calculator",
+        "description": "Design of a simple calculator, with basic and simple functionality."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "TESTIMONIALS",
+    "items": [
+      {
+        "name": "Enrique Calderón",
+        "role": "Personal Trainer",
+        "message": "Great work on my website design! I really liked the result. He made my website great and easy to use. Thanks for making my online presence amazing and for your patience throughout the process!"
+      },
+      {
+        "name": "Erick Ramírez",
+        "role": "Rep. FincaRaíz R&H",
+        "message": "The design you developed is not only attractive, but also perfectly captured the essence of our brand. Thanks to your talent, we now have an online presence that truly sets us apart!"
+      }
+    ]
+  },
+  "contact": {
+    "title": "CONTACT",
+    "info": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "E-mail",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "errors": {
+        "nameRequired": "Name is required.",
+        "emailRequired": "Email is required and must be in a valid format.",
+        "messageRequired": "Message is required."
+      },
+      "success": "The form has been sent successfully."
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2023 | Daniel David Calderón Tinjaca. All rights reserved.",
+    "followMe": "Follow Me"
+  }
+}

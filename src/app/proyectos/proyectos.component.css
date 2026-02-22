@@ -11,17 +11,23 @@ section {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    }
+    position: relative;
+    z-index: 2;
+}
 
 .titulos h2 {
     font-size: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-family: 'Carter One', cursive;
-    color: rgb(15, 15, 15);
-    width: 360px;
     text-align: center;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    }
+    background: linear-gradient(135deg, #5a069b 0%, #8b2e8f 50%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, transparent, #5a069b, transparent) 1;
+    transition: all 0.3s ease;
+}
 
 .descripcion {
     color: #000000;

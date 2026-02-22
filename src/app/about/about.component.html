@@ -1,21 +1,17 @@
 <section>
-    <div class="titulos"><h2>SOBRE MI</h2></div>
+    <div class="titulos"><h2>{{ 'about.title' | translate }}</h2></div>
     <div class="container">
         <div class="cont-card">
             <app-about-card></app-about-card>
         </div>
         <div class="content-about">
-            <p class="title"><span>B</span>ienvenido a mi portafolio web ...</p>
-            <p>Soy Daniel David Calderón, un apasionado Desarrollador Web Front-end dedicado a la creación de experiencias 
-            de usuario únicas. 
-            Mi objetivo es diseñar sitios web intuitivos y atractivos que proporcionen una experiencia excepcional. 
-            Explora mi portafolio web con proyectos que destacan mis habilidades en Angular, HTML, CSS y JavaScript para crear 
-            sitios web responsivos y optimizados.
+            <p class="title">{{ 'about.welcome' | translate }}</p>
+            <p>{{ 'about.description' | translate }}
             <br>
-            <b>¡Gracias por visitar mi portafolio web y espero que disfrutes viendo mis proyectos tanto como yo disfruté creándolos!</b>
+            <b>{{ 'about.thanks' | translate }}</b>
             </p>
             <div class="content-button">
-                <a mat-button class="animate-button" href="#contact">CONTACTAME</a>
+                <a mat-button class="animate-button" href="#contact">{{ 'about.contactBtn' | translate }}</a>
             </div>
         </div>
     </div>

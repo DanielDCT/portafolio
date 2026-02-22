@@ -1,29 +1,29 @@
 <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
     <div class="form-group">
-        <label for="name">Nombre:</label>
+        <label for="name">{{ 'contact.form.name' | translate }}:</label>
         <input type="text" id="name" formControlName="name" required>
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error-message">
-        El nombre es requerido.
+        {{ 'contact.form.errors.nameRequired' | translate }}
         </div>
     </div>
     <div class="form-group">
-        <label for="email">Correo electrónico:</label>
+        <label for="email">{{ 'contact.form.email' | translate }}:</label>
         <input type="email" id="email" formControlName="email" required>
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error-message">
-        El correo electrónico es requerido y debe tener un formato válido.
+        {{ 'contact.form.errors.emailRequired' | translate }}
         </div>
     </div>
     <div class="form-group">
-        <label for="message">Mensaje:</label>
+        <label for="message">{{ 'contact.form.message' | translate }}:</label>
         <textarea id="message" formControlName="message" required></textarea>
         <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error-message">
-        El mensaje es requerido.
+        {{ 'contact.form.errors.messageRequired' | translate }}
         </div>
     </div>
-    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+    <button type="submit" [disabled]="contactForm.invalid">{{ 'contact.form.send' | translate }}</button>
     <ng-template #successModal let-modal>
         <div class="modal-header">
-            <h4 class="modal-title">Éxito</h4>
+            <h4 class="modal-title">{{ 'contact.form.send' | translate }}</h4>
             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -32,7 +32,7 @@
             <div class="success-icon">
                 <i class="fas fa-check-circle"></i>
             </div>
-            <p>El formulario se ha enviado correctamente.</p>
+            <p>{{ 'contact.form.success' | translate }}</p>
         </div>
     </ng-template>
 </form>

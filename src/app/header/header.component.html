@@ -1,26 +1,33 @@
 <mat-toolbar color="primary" [ngClass]="{ 'navbar-scrolled': navbarScrolled }" #navbar>
-    <a mat-button href="#inicio" class="logo">PORTAFOLIO</a>
+    <a mat-button href="#inicio" class="logo">{{ 'navbar.logo' | translate }}</a>
     <div class="spacer"></div>
     <div class="menu-container" [class.open]="menuOpen">
-        <a mat-button href="#about">
-            <mat-icon class="icon">person</mat-icon> Sobre Mi
+        <a mat-button href="#about" (click)="closeMenu()">
+            <mat-icon class="icon">person</mat-icon> {{ 'navbar.about' | translate }}
         </a>
-        <a mat-button href="#lenguajes">
-            <mat-icon class="icon">code</mat-icon> Lenguajes
+        <a mat-button href="#lenguajes" (click)="closeMenu()">
+            <mat-icon class="icon">code</mat-icon> {{ 'navbar.languages' | translate }}
         </a>
-        <a mat-button href="#proyectos">
-            <mat-icon class="icon"n>work</mat-icon> Proyectos
+        <a mat-button href="#proyectos" (click)="closeMenu()">
+            <mat-icon class="icon">work</mat-icon> {{ 'navbar.projects' | translate }}
         </a>
-        <a mat-button href="#testimonios">
-            <mat-icon class="icon">star</mat-icon> Testimonios
+        <a mat-button href="#testimonios" (click)="closeMenu()">
+            <mat-icon class="icon">star</mat-icon> {{ 'navbar.testimonials' | translate }}
         </a>
-        <a mat-button href="#contact">
-            <mat-icon class="icon">mail</mat-icon> Contacto
+        <a mat-button href="#contact" (click)="closeMenu()">
+            <mat-icon class="icon">mail</mat-icon> {{ 'navbar.contact' | translate }}
         </a>
-        <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download>
-            <mat-icon class="icon download">cloud_download</mat-icon> CV
+        <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download (click)="closeMenu()">
+            <mat-icon class="icon download">cloud_download</mat-icon> {{ 'navbar.cv' | translate }}
         </a>
+        <button mat-button class="language-btn-mobile" (click)="toggleLanguage()" [title]="currentLanguage === 'es' ? 'Switch to English' : 'Cambiar al Español'">
+            <mat-icon class="icon">language</mat-icon> {{ currentLanguage === 'es' ? 'Español' : 'English' }}
+        </button>
     </div>
+    <button mat-button class="language-btn-desktop" (click)="toggleLanguage()" [title]="currentLanguage === 'es' ? 'Switch to English' : 'Cambiar al Español'">
+        <mat-icon>language</mat-icon>
+        <span class="language-text">{{ currentLanguage | uppercase }}</span>
+    </button>
     <button mat-icon-button (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen ? 'true' : 'false'"
         [attr.aria-label]="menuOpen ? 'Cerrar menú' : 'Abrir menú'" class="menu-button">
         <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>

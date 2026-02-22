@@ -1,15 +1,35 @@
-import { Component, HostListener, ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, HostListener, ElementRef, OnInit, OnDestroy } from '@angular/core';
+import { TranslationService } from '../services/translation.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, OnDestroy {
   menuOpen = false;
   navbarScrolled: boolean = false;
+  currentLanguage: string = 'es';
+  private destroy$ = new Subject<void>();
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+    private elementRef: ElementRef,
+    public translationService: TranslationService
+  ) {
+    this.currentLanguage = this.translationService.getCurrentLanguage();
+  }
+
+  ngOnInit(): void {
+    // Suscribirse a cambios de idioma
+    this.translationService.getLanguage$()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(lang => {
+        this.currentLanguage = lang;
+      });
+  }
+
   // Este método se ejecuta cuando se realiza el evento 'scroll' en la ventana
   @HostListener('window:scroll')
   onWindowScroll() {
@@ -22,4 +42,27 @@ export class HeaderComponent {
       this.navbarScrolled = false;
     }
   }
+
+  /**
+   * Cierra el menú
+   */
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
+
+  /**
+   * Alterna entre español e inglés
+   */
+  toggleLanguage(): void {
+    this.translationService.toggleLanguage();
+  }
+
+  /**
+   * Limpia las suscripciones
+   */
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
 }
+

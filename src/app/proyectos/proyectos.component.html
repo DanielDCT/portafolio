@@ -1,14 +1,14 @@
 <section>
     <div class="titulos">
-        <h2>PROYECTOS</h2>
+        <h2>{{ 'projects.title' | translate }}</h2>
     </div>
     <div class="descripcion">
-        <p>¡Espero que disfrutes viendo mis proyectos tanto como yo disfruté creándolos!</p>
+        <p>{{ 'projects.description' | translate }}</p>
     </div>
 
     <!-- <app-proyectos-formales></app-proyectos-formales> -->
 
-    <div class="titulo"><h3>Proyectos Personales</h3></div>
+    <div class="titulo"><h3>{{ 'projects.personalProjects' | translate }}</h3></div>
     <div class="container">
         <!-- Bucle *ngFor para recorrer la lista de proyectos y crear una tarjeta por cada uno / fadeIn es el llamado a la animación
         definida en el .ts -->
@@ -28,13 +28,13 @@
                 </div>
             </div>
             <div class="card-footer">
-                <a [href]="proyecto.link" target="_blank" class="btn">Ver Proyecto</a>
+                <a [href]="proyecto.link" target="_blank" class="btn">{{ 'projects.viewProject' | translate }}</a>
             </div>
         </div>
     </div>
     <!-- Contenedor del botón "Cargar más" -->
     <div class="content-button" *ngIf="visibleCardsCount < proyectos.length">
         <!-- Botón "Cargar más" -->
-        <a class="animate-button" (click)="loadMoreCards()">Cargar más</a>
+        <a class="animate-button" (click)="loadMoreCards()">{{ 'projects.loadMore' | translate }}</a>
     </div>
 </section>

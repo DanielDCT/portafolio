@@ -1,42 +1,19 @@
 section {
     width: 100%;
     min-height: 100vh;
-    background: rgb(255, 255, 255);
+    background: 
+        radial-gradient(circle at 20% 10%, rgba(132, 0, 255, 0.15), transparent 40%), 
+        radial-gradient(circle at 90% 95%, rgba(90, 6, 155, 0.2), transparent 40%), 
+        radial-gradient(circle at 50% 90%, rgba(147, 51, 234, 0.15), transparent 35%), 
+        linear-gradient(135deg, #f8f7ff 0%, #f0e6ff 100%);
     padding: 60px 45px;
     position: relative;
     overflow: hidden;
-    }
+}
 
 .circle1, .circle2, .circle3 {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: rgba(116, 9, 135, 0.2);
-    filter: blur(20px);
-    z-index: 1;
-    }
-
-.circle1 {
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -60%);
-    opacity: .6;
-    }
-
-.circle2 {
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-    opacity: .8;
-    }
-
-.circle3 {
-    bottom: 0;
-    left: 0;
-    transform: translate(30%, 70%);
-    opacity: .6;
-    }
+    display: none;
+}
 
 .titulos {
     width: 100%;
@@ -44,61 +21,89 @@ section {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    }
+    position: relative;
+    z-index: 2;
+}
 
 .titulos h2 {
     font-size: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-family: 'Carter One', cursive;
-    width: 360px;
     text-align: center;
-    border-bottom: 2px solid black;
-    }
+    background: linear-gradient(135deg, #5a069b 0%, #8b2e8f 50%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px 0;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, transparent, #5a069b, transparent) 1;
+    transition: all 0.3s ease;
+}
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 20px;
-    gap: 20px;
+    gap: 60px;
     z-index: 2;
-    }
+    position: relative;
+}
 
 .cont-card {
-    min-width: 30%;
-    }
+    min-width: 350px;
+    flex-shrink: 0;
+}
 
 .content-about {
-    min-width: 70%;
-    }
+    flex: 1;
+    min-width: 400px;
+}
 
 .content-about .title {
-    font-size: 24px;
-    font-weight: 500;
-    }
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #5a069b 0%, #8b2e8f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    display: block;
+}
 
-.title span {
-    font-size: 30px;
-    }
+.title::first-letter {
+    font-size: 42px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 3px;
+}
 
 .content-about p {
-    font-size: 20px;
-    color: rgb(17, 16, 16);
-    line-height: 1.8;
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 2;
     position: relative;
     z-index: 2;
-    }
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
 
 mark {
-    background: #5a069b;
-    color: #fdfdfd;
-    }
+    background: linear-gradient(135deg, #5a069b 0%, #8b2e8f 100%);
+    color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
 
 .content-button {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     z-index: 3;
     }
 
@@ -174,87 +179,135 @@ a:active {
     }
 
 @media (max-width: 991px) {
+    section {
+        padding: 60px 30px;
+    }
+
     .container {
         flex-direction: column;
-        }
+        gap: 40px;
+    }
 
     .cont-card {
         min-width: 100%;
-        }
+        max-width: 350px;
+    }
 
     .content-about {
         min-width: 100%;
-        }
+    }
+
+    .content-button {
+        justify-content: center;
+    }
 
     .content-button a {
-        width: 100%;
-        margin-top: 15px;
-        }
+        width: auto;
+        margin-top: 20px;
+    }
 
-    a:hover::before, a:hover::after {
-        height: 920px;
-        width: 920px;
-        }
+    .titulos h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .titulos {
+        padding: 30px 15px 40px;
+    }
+
+    .titulos h2 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .content-about .title {
+        font-size: 22px;
+    }
+
+    .title span {
+        font-size: 28px;
+    }
+
+    .content-about p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .content-button a {
+        font-size: 14px;
+        padding: 12px 32px;
+    }
 }
 
 @media (max-width: 600px) {
     section {
-        padding: 60px 20px;
-        }
+        padding: 40px 15px;
+    }
 
     .titulos h2 {
-        font-size: 16px;
-        }
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
 
     .content-about .title {
-        font-size: 16px;
-        }
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
 
     .title span {
-        font-size: 19px;
-        }
+        font-size: 22px;
+    }
 
     .content-about p {
-        font-size: 14px;
-        }
+        font-size: 13px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .content-button {
+        justify-content: center;
+        margin-top: 20px;
+    }
 
     .content-button a {
         width: 100%;
-        font-size: 14px;
-        margin-top: 2px;
-        }
+        font-size: 13px;
+        padding: 12px 24px;
+    }
 
-    a:hover::before, a:hover::after {
-        height: 420px;
-        width: 420px;
-        }
+    .card {
+        height: auto;
+    }
 }
 
-@media (max-width: 991px) and (max-height:321px){
+@media (max-width: 400px) {
+    section {
+        padding: 30px 10px;
+    }
+
     .titulos h2 {
-        font-size: 16px;
-        }
+        font-size: 20px;
+    }
 
     .content-about .title {
         font-size: 16px;
-        }
+    }
 
     .title span {
-        font-size: 19px;
-        }
+        font-size: 18px;
+    }
 
     .content-about p {
-        font-size: 14px;
-        }
+        font-size: 12px;
+    }
 
     .content-button a {
-        width: 100%;
-        font-size: 14px;
-        margin-top: 2px;
-        }
-
-    a:hover::before, a:hover::after {
-        height: 620px;
-        width: 620px;
-        }
+        font-size: 12px;
+        padding: 10px 20px;
+    }
 }

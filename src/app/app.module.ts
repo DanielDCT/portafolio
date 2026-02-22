@@ -27,6 +27,7 @@ import { TestimoniosComponent } from './testimonios/testimonios.component';
 import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 import { ProyectosFormalesComponent } from './proyectos-formales/proyectos-formales.component';
 import { LoaderComponent } from './loader/loader.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { LoaderComponent } from './loader/loader.component';
     TestimoniosComponent,
     WhatsappButtonComponent,
     ProyectosFormalesComponent,
-    LoaderComponent
+    LoaderComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
