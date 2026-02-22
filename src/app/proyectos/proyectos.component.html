@@ -15,7 +15,7 @@
         <div *ngFor="let proyecto of proyectos | slice:0:visibleCardsCount" class="card" [@fadeIn]>
             <!-- Encabezado de la tarjeta -->
             <div class="card-img">
-                <a [href]="proyecto.link" target="_blank">
+                <a [href]="proyecto.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Ver proyecto: ' + proyecto.title">
                     <img [src]="proyecto.image" class="project-image" [alt]= "proyecto.altImg" [title]= "proyecto.titleImg"  loading="lazy">
                 </a>
             </div>
@@ -28,13 +28,13 @@
                 </div>
             </div>
             <div class="card-footer">
-                <a [href]="proyecto.link" target="_blank" class="btn">{{ 'projects.viewProject' | translate }}</a>
+                <a [href]="proyecto.link" target="_blank" rel="noopener noreferrer" class="btn" [attr.aria-label]="'Ver proyecto: ' + proyecto.title">{{ 'projects.viewProject' | translate }}</a>
             </div>
         </div>
     </div>
     <!-- Contenedor del botón "Cargar más" -->
     <div class="content-button" *ngIf="visibleCardsCount < proyectos.length">
         <!-- Botón "Cargar más" -->
-        <a class="animate-button" (click)="loadMoreCards()">{{ 'projects.loadMore' | translate }}</a>
+        <a href="#" class="animate-button" (click)="loadMoreCards(); $event.preventDefault()">{{ 'projects.loadMore' | translate }}</a>
     </div>
 </section>

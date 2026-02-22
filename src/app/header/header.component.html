@@ -1,20 +1,20 @@
 <mat-toolbar color="primary" [ngClass]="{ 'navbar-scrolled': navbarScrolled }" #navbar>
-    <a mat-button href="#inicio" class="logo">{{ 'navbar.logo' | translate }}</a>
+    <a mat-button href="#" (click)="scrollToSection('inicio'); $event.preventDefault(); closeMenu()" class="logo">{{ 'navbar.logo' | translate }}</a>
     <div class="spacer"></div>
     <div class="menu-container" [class.open]="menuOpen">
-        <a mat-button href="#about" (click)="closeMenu()">
+        <a mat-button href="#" (click)="scrollToSection('about'); $event.preventDefault(); closeMenu()">
             <mat-icon class="icon">person</mat-icon> {{ 'navbar.about' | translate }}
         </a>
-        <a mat-button href="#lenguajes" (click)="closeMenu()">
+        <a mat-button href="#" (click)="scrollToSection('lenguajes'); $event.preventDefault(); closeMenu()">
             <mat-icon class="icon">code</mat-icon> {{ 'navbar.languages' | translate }}
         </a>
-        <a mat-button href="#proyectos" (click)="closeMenu()">
+        <a mat-button href="#" (click)="scrollToSection('proyectos'); $event.preventDefault(); closeMenu()">
             <mat-icon class="icon">work</mat-icon> {{ 'navbar.projects' | translate }}
         </a>
-        <a mat-button href="#testimonios" (click)="closeMenu()">
+        <a mat-button href="#" (click)="scrollToSection('testimonios'); $event.preventDefault(); closeMenu()">
             <mat-icon class="icon">star</mat-icon> {{ 'navbar.testimonials' | translate }}
         </a>
-        <a mat-button href="#contact" (click)="closeMenu()">
+        <a mat-button href="#" (click)="scrollToSection('contact'); $event.preventDefault(); closeMenu()">
             <mat-icon class="icon">mail</mat-icon> {{ 'navbar.contact' | translate }}
         </a>
         <a mat-button class="download-button" href="../../assets/cv/CV - Daniel David Calderón Tinjaca.pdf" download (click)="closeMenu()">

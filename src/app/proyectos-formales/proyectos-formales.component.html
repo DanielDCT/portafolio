@@ -6,7 +6,7 @@
         <div *ngFor="let ProyectoFormal of proyectos" class="card">
             <!-- Encabezado de la tarjeta -->
             <div class="card-img">
-                <a [href]="ProyectoFormal.link" target="_blank">
+                <a [href]="ProyectoFormal.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Ver proyecto: ' + ProyectoFormal.title">
                     <img [src]="ProyectoFormal.image" class="project-image" [alt]= "ProyectoFormal.altImg" 
                     [title]= "ProyectoFormal.titleImg"  loading="lazy">
                 </a>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="card-footer">
-                <a [href]="ProyectoFormal.link" target="_blank" class="btn">Ver Proyecto</a>
+                <a [href]="ProyectoFormal.link" target="_blank" rel="noopener noreferrer" class="btn" [attr.aria-label]="'Ver proyecto: ' + ProyectoFormal.title">Ver Proyecto</a>
             </div>
         </div>
     </div>

@@ -43,23 +43,25 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
   }
 
-  /**
-   * Cierra el menú
-   */
+  // Cierra el menú
   closeMenu(): void {
     this.menuOpen = false;
   }
 
-  /**
-   * Alterna entre español e inglés
-   */
+  // Alterna entre español e inglés
   toggleLanguage(): void {
     this.translationService.toggleLanguage();
   }
 
-  /**
-   * Limpia las suscripciones
-   */
+  // Navega suavemente a una sección sin cambiar la URL
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Limpia las suscripciones
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();

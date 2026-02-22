@@ -10,8 +10,8 @@
                 <p class="description">{{ 'banner.description' | translate }}</p>
             </div>
             <div class="content-buttons">
-                <a mat-button class="animate-button" href="#proyectos">{{ 'banner.projectsBtn' | translate }}</a>
-                <a mat-button class="animate-button" href="#about">{{ 'banner.aboutBtn' | translate }}</a>
+                <a mat-button class="animate-button" href="#" (click)="scrollToSection('proyectos'); $event.preventDefault();">{{ 'banner.projectsBtn' | translate }}</a>
+                <a mat-button class="animate-button" href="#" (click)="scrollToSection('about'); $event.preventDefault();">{{ 'banner.aboutBtn' | translate }}</a>
             </div>
         </div>
     </div>

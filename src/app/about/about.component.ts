@@ -7,4 +7,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class AboutComponent {
 
+  // Navega suavemente a una sección sin cambiar la URL
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
