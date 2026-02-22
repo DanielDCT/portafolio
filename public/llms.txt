@@ -1,0 +1,50 @@
+# Daniel David Calderón Tinjaca — Portfolio
+
+> Junior Frontend Web Developer from Villeta, Cundinamarca, Colombia.
+
+## About
+
+Daniel David Calderón Tinjaca is a junior frontend web developer specializing in Angular
+and modern web technologies. Passionate about creating attractive, responsive, and
+accessible web experiences.
+
+## Contact
+
+- Email: calderondanieldavid@gmail.com
+- GitHub: https://github.com/DanielDCT
+- LinkedIn: https://linkedin.com/in/daniel-calderon-tinjaca
+- Twitter: https://twitter.com/danieldacati1
+- Location: Villeta, Cundinamarca, Colombia
+
+## Skills
+
+- Frameworks: Angular, Bootstrap
+- Languages: TypeScript, JavaScript, HTML5, CSS3, PHP
+- Tools: Git, MySQL
+- Practices: Responsive Design, SEO Optimization
+
+## Services
+
+- Development of modern and visually attractive websites
+- Responsive design for all devices
+- SEO optimization for better visibility
+
+## Projects (19 personal projects)
+
+- Portafolio — Personal portfolio built with Angular, TypeScript, HTML5, CSS
+- PokeApi — Pokemon API explorer with Angular
+- Iron Core — Personal training services website (Angular)
+- Panadela — Cappuccino promotion website (Angular)
+- Opticalia — E-commerce website for glasses (HTML/CSS/JS)
+- Traveling — Flight promotion website (HTML/CSS/JS)
+- Login & Signup PHP — Functional login system (PHP, MySQL)
+- BMI Calculator — Body Mass Index tool (HTML/CSS/JS)
+- And 11 more projects available on the portfolio.
+
+## Languages
+
+This portfolio is available in Spanish (ES) and English (EN).
+
+## CV
+
+Available at: https://portafoliodanieldct.netlify.app/assets/cv/CV%20-%20Daniel%20David%20Calder%C3%B3n%20Tinjaca.pdf

@@ -1,0 +1,24 @@
+# Robots.txt - Portafolio Daniel David Calderón Tinjaca
+# https://portafoliodanieldct.netlify.app
+
+User-agent: *
+Allow: /
+Disallow: /assets/cv/
+
+Sitemap: https://portafoliodanieldct.netlify.app/sitemap.xml
+
+# Bots de motores de IA - acceso permitido
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
