@@ -10,7 +10,7 @@
   },
   "banner": {
     "mainTitle": "Portafolio Web",
-    "subtitle": "Desarrollador Web Front-End Junior",
+    "subtitle": "Desarrollador Web Front-End Mid",
     "description": "Como Desarrollador web Front-End, mi misión es transformar tus ideas en experiencias web que cautivarán a tus visitantes e impulsarán tu negocio en línea. Explora mi trabajo y descubre cómo puedo llevar tus proyectos al siguiente nivel.",
     "projectsBtn": "Proyectos",
     "aboutBtn": "Sobre mi"
@@ -24,7 +24,7 @@
   },
   "aboutCard": {
     "name": "Daniel Calderón",
-    "role": "Desarrollador Web Front-end Jr"
+    "role": "Desarrollador Web Front-end Mid"
   },
   "services": {
     "title": "Servicios",
@@ -45,7 +45,7 @@
   },
   "languages": {
     "title": "LENGUAJES",
-    "description": "En esta sección encontrarás los lenguajes de programación que domino y utilizo en mis proyectos. Cada lenguaje tiene su propia importancia y utilidad, y me apasiona aprender nuevas tecnologías para seguir mejorando mis habilidades como desarrollador."
+    "description": "En esta sección encontrarás los lenguajes y tecnologías que domino y utilizo en mis proyectos. Cada lenguaje tiene su propia importancia y utilidad, y me apasiona aprender nuevas tecnologías para seguir mejorando mis habilidades como desarrollador."
   },
   "projects": {
     "title": "PROYECTOS",
@@ -134,6 +134,7 @@
   },
   "testimonials": {
     "title": "TESTIMONIOS",
+    "goToPage": "Ir a la página",
     "items": [
       {
         "name": "Enrique Calderón",

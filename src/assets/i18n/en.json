@@ -10,7 +10,7 @@
   },
   "banner": {
     "mainTitle": "Web Portfolio",
-    "subtitle": "Junior Front-End Web Developer",
+    "subtitle": "Mid Front-End Web Developer",
     "description": "As a Front-End Web Developer, my mission is to transform your ideas into web experiences that will captivate your visitors and drive your business online. Explore my work and discover how I can take your projects to the next level.",
     "projectsBtn": "Projects",
     "aboutBtn": "About me"
@@ -24,7 +24,7 @@
   },
   "aboutCard": {
     "name": "Daniel Calderón",
-    "role": "Junior Front-End Web Developer"
+    "role": "Mid Front-End Web Developer"
   },
   "services": {
     "title": "Services",
@@ -45,7 +45,7 @@
   },
   "languages": {
     "title": "LANGUAGES",
-    "description": "In this section you will find the programming languages I master and use in my projects. Each language has its own importance and utility, and I'm passionate about learning new technologies to continue improving my skills as a developer."
+    "description": "In this section you will find the languages and technologies that I master and use in my projects. Each language has its own importance and utility, and I am passionate about learning new technologies to continue improving my skills as a developer."
   },
   "projects": {
     "title": "PROJECTS",
@@ -134,6 +134,7 @@
   },
   "testimonials": {
     "title": "TESTIMONIALS",
+    "goToPage": "Go to the page",
     "items": [
       {
         "name": "Enrique Calderón",

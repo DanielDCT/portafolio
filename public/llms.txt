@@ -1,10 +1,10 @@
 # Daniel David Calderón Tinjaca — Portfolio
 
-> Junior Frontend Web Developer from Villeta, Cundinamarca, Colombia.
+> Mid Frontend Web Developer from Villeta, Cundinamarca, Colombia.
 
 ## About
 
-Daniel David Calderón Tinjaca is a junior frontend web developer specializing in Angular
+Daniel David Calderón Tinjaca is a Mid frontend web developer specializing in Angular
 and modern web technologies. Passionate about creating attractive, responsive, and
 accessible web experiences.
 

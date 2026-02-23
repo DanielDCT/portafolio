@@ -14,6 +14,10 @@ export class LenguajesComponent {
     { icono: 'fab fa-js', nombre: 'JavaScript' },
     { icono: 'fab fa-bootstrap', nombre: 'Bootstrap' },
     { icono: 'fas fa-database', nombre: 'MySQL' },
-    { icono: 'fab fa-php', nombre: 'PHP' }
+    { icono: 'fab fa-php', nombre: 'PHP' },
+    { icono: 'fas fa-exchange-alt', nombre: 'AJAX' },
+    { icono: 'fab fa-js-square', nombre: 'jQuery' },
+    { icono: 'fa-brands fa-tailwind-css', nombre: 'Tailwind' },
+    { icono: 'fa-brands fa-typescript', nombre: 'TypeScript' }
   ];
 }
