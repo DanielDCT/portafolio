@@ -1,4 +1,4 @@
-<div *ngIf="mostrarLoader" class="container-loader">
+<div class="container-loader" [class.hidden]="!mostrarLoader">
     <svg>
         <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">Daniel Calderón</text>
     </svg>

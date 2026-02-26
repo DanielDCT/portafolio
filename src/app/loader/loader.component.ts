@@ -12,14 +12,8 @@ export class LoaderComponent  implements OnInit {
 
   ngOnInit() {
     this.mostrarLoader = true;
-
-    // Agrega la clase no-scroll al body
-    this.renderer.setStyle(document.body, 'overflow', 'hidden');
-
     setTimeout(() => {
       this.mostrarLoader = false;
-
-      this.renderer.removeStyle(document.body, 'overflow');
-    }, 2000);
+    }, 1200); // Menos tiempo, no bloquea scroll
   }
 }

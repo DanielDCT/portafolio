@@ -22,7 +22,12 @@
         hsl(277deg 93% 18%) 66%,
         hsl(277deg 92% 15%) 100%
         );
-    }
+}
+
+.container-loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
 svg {
     width: 100%;
