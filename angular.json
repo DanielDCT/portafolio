@@ -95,6 +95,46 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/portafolio/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "Portafolio:build",
+            "serverTarget": "Portafolio:server",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "Portafolio:build:production",
+              "serverTarget": "Portafolio:server:production"
+            },
+            "development": {
+              "browserTarget": "Portafolio:build:development",
+              "serverTarget": "Portafolio:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -1,0 +1,13 @@
+[build]
+  command = "npm run prerender"
+  publish = "dist/portafolio"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
