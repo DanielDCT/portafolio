@@ -28,6 +28,7 @@ import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.compo
 import { ProyectosFormalesComponent } from './proyectos-formales/proyectos-formales.component';
 import { LoaderComponent } from './loader/loader.component';
 import { TranslatePipe } from './pipes/translate.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
     WhatsappButtonComponent,
     ProyectosFormalesComponent,
     LoaderComponent,
-    TranslatePipe
+    TranslatePipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
