@@ -75,10 +75,11 @@
     font-weight: 500;
     }
 
-.service i {
-    font-size: 48px;
+.service-icon {
+    font-size: 50px;
     margin-bottom: 10px;
     color: #5a069b; /* Cambio de color del icono */
+    font-weight: 600;
     }
 
 .service p {
@@ -139,7 +140,7 @@
         letter-spacing: 1.1px;
         }
 
-    .service i {
+    .service-icon {
         font-size: 38px;
         }
 
@@ -158,7 +159,7 @@
         letter-spacing: 1.1px;
         }
 
-    .service i {
+    .service-icon {
         font-size: 38px;
         }
 

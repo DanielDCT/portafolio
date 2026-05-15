@@ -1,12 +1,8 @@
 <div class="container" id="services">
     <div class="titulos"><h2>{{ 'services.title' | translate }}</h2></div>
     <div class="services-container">
-        <div class="service" *ngFor="let service of services">
-            <i [ngClass]="[
-              service.name.includes('Atractivos') || service.name.includes('Attractive') ? 'fas fa-code' : 
-              service.name.includes('Responsivo') || service.name.includes('Responsive') ? 'fas fa-mobile-alt' : 
-              'fas fa-search'
-            ]"></i>
+        <div class="service" *ngFor="let service of services; let i = index">
+            <span class="material-icons service-icon">{{ serviceIcons[i] }}</span>
             <h3>{{ service.name }}</h3>
             <p>{{ service.description }}</p>
         </div>

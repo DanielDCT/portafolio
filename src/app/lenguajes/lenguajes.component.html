@@ -6,7 +6,9 @@
     <div class="container">
         <div class="lenguajes-container">
             <div class="lenguaje" *ngFor="let lenguaje of lenguajes">
-                <i [class]="lenguaje.icono"></i>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tech-icon" [attr.aria-label]="lenguaje.nombre">
+                    <path [attr.d]="lenguaje.path" />
+                </svg>
                 <span>{{ lenguaje.nombre }}</span>
             </div>
         </div>

@@ -122,62 +122,55 @@ hr {
     animation-delay: 0.2s;
 }
 
-.cont-social i {
+.cont-social svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
     transition: all 0.3s ease;
 }
 
-.cont-social a:nth-child(1):hover,
-.cont-social a:nth-child(1) i:hover {
+.cont-social a:nth-child(1):hover {
     background: rgba(6, 180, 70, 0.2);
     border-color: #06b446;
     transform: scale(1.15) rotate(15deg);
     color: #06b446;
 }
 
-.cont-social a:nth-child(2):hover,
-.cont-social a:nth-child(2) i:hover {
+.cont-social a:nth-child(2):hover {
     background: rgba(33, 31, 31, 0.2);
     border-color: #211F1F;
     transform: scale(1.15) rotate(-15deg);
     color: #211F1F;
 }
 
-.cont-social a:nth-child(3):hover,
-.cont-social a:nth-child(3) i:hover {
+.cont-social a:nth-child(3):hover {
     background: rgba(59, 89, 152, 0.2);
     border-color: #3B5998;
     transform: scale(1.15) rotate(15deg);
     color: #3B5998;
 }
 
-.cont-social a:nth-child(4):hover,
-.cont-social a:nth-child(4) i:hover {
+.cont-social a:nth-child(4):hover {
     background: rgba(193, 53, 132, 0.2);
     border-color: #C13584;
     transform: scale(1.15) rotate(-15deg);
     color: #C13584;
 }
 
-.cont-social a:nth-child(5):hover,
-.cont-social a:nth-child(5) i:hover {
+.cont-social a:nth-child(5):hover {
     background: rgba(29, 161, 242, 0.2);
     border-color: #1DA1F2;
     transform: scale(1.15) rotate(15deg);
     color: #1DA1F2;
 }
 
-.cont-social a:nth-child(6):hover,
-.cont-social a:nth-child(6) i:hover {
+.cont-social a:nth-child(6):hover {
     background: rgba(10, 102, 194, 0.2);
     border-color: #0A66C2;
     transform: scale(1.15) rotate(-15deg);
     color: #0A66C2;
 }
 
-.cont-social i:hover {
-    background: transparent !important;
-    transform: none !important;
-}
 
 @media (max-width: 768px) {
     .card {

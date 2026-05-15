@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import { getIconPath, IconKey } from '../icons/icons';
+
+interface Lenguaje {
+  key: IconKey;
+  nombre: string;
+  path: string;
+}
 
 @Component({
   selector: 'app-lenguajes',
@@ -6,18 +13,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./lenguajes.component.css']
 })
 export class LenguajesComponent {
-  lenguajes: { icono: string, nombre: string }[] = [
-    { icono: 'fab fa-angular', nombre: 'Angular' },
-    { icono: 'fab fa-html5', nombre: 'HTML5' },
-    { icono: 'fab fa-css3-alt', nombre: 'CSS3' },
-    { icono: 'fab fa-git', nombre: 'Git' },
-    { icono: 'fab fa-js', nombre: 'JavaScript' },
-    { icono: 'fab fa-bootstrap', nombre: 'Bootstrap' },
-    { icono: 'fas fa-database', nombre: 'MySQL' },
-    { icono: 'fab fa-php', nombre: 'PHP' },
-    { icono: 'fas fa-exchange-alt', nombre: 'AJAX' },
-    { icono: 'fab fa-js-square', nombre: 'jQuery' },
-    { icono: 'fa-brands fa-tailwind-css', nombre: 'Tailwind' },
-    { icono: 'fa-brands fa-typescript', nombre: 'TypeScript' }
-  ];
+  lenguajes: Lenguaje[] = (
+    [
+      { key: 'angular'    as IconKey, nombre: 'Angular'    },
+      { key: 'html5'      as IconKey, nombre: 'HTML5'      },
+      { key: 'css3'       as IconKey, nombre: 'CSS3'       },
+      { key: 'git'        as IconKey, nombre: 'Git'        },
+      { key: 'javascript' as IconKey, nombre: 'JavaScript' },
+      { key: 'bootstrap'  as IconKey, nombre: 'Bootstrap'  },
+      { key: 'mysql'      as IconKey, nombre: 'MySQL'      },
+      { key: 'php'        as IconKey, nombre: 'PHP'        },
+      { key: 'ajax'       as IconKey, nombre: 'AJAX'       },
+      { key: 'jquery'     as IconKey, nombre: 'jQuery'     },
+      { key: 'tailwind'   as IconKey, nombre: 'Tailwind'   },
+      { key: 'typescript' as IconKey, nombre: 'TypeScript' },
+    ]
+  ).map(l => ({ ...l, path: getIconPath(l.key) }));
 }

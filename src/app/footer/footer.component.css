@@ -45,7 +45,14 @@ ul.social-icons li {
 
 ul.social-icons li a {
     color: #fff;
-    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+    }
+
+ul.social-icons li a svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
     }
 
 ul.social-icons li a:hover {
@@ -73,8 +80,9 @@ ul.social-icons li a:hover {
         margin: 0 14px 0 14px;
         }
     
-    ul.social-icons li a {
-        font-size: 24px;
+    ul.social-icons li a svg {
+        width: 24px;
+        height: 24px;
         }
 
     .logo-portafolio {
@@ -98,8 +106,9 @@ ul.social-icons li a:hover {
         margin: 0 14px 0 14px;
         }
     
-    ul.social-icons li a {
-        font-size: 24px;
+    ul.social-icons li a svg {
+        width: 24px;
+        height: 24px;
         }
 
     .logo-portafolio {

@@ -55,9 +55,10 @@ section {
     width: 100px;
     }
 
-.lenguaje i {
-    font-size: 68px;
-    color: var(--color2);
+.tech-icon {
+    width: 68px;
+    height: 68px;
+    fill: var(--color2);
     }
 
 .lenguaje span {

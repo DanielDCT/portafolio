@@ -9,10 +9,12 @@ import { TranslationService } from '../services/translation.service';
 export class ServicesComponent implements OnInit {
   services: any[] = [];
 
+  // Iconos en el mismo orden que services.items en los ficheros de traducción
+  readonly serviceIcons = ['code', 'smartphone', 'search'];
+
   constructor(public translationService: TranslationService) {}
 
   ngOnInit(): void {
-    // Suscribirse a cambios de traducciones (cuando se cargan o cuando cambia el idioma)
     this.translationService.getTranslations$().subscribe((translations) => {
       if (translations && Object.keys(translations).length > 0) {
         this.loadServices();

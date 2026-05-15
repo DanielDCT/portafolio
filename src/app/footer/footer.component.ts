@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getIconPath } from '../icons/icons';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  icons = {
+    facebook:  getIconPath('facebook'),
+    whatsapp:  getIconPath('whatsapp'),
+    instagram: getIconPath('instagram'),
+  };
 }

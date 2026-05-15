@@ -3,7 +3,7 @@
         <h2>{{ 'testimonials.title' | translate }}</h2>
     </div>
     <div class="slider-container container">
-        <i class="fas fa-arrow-left slider-arrow" id="before" (click)="anteriorTestimonio()"></i>
+        <span class="material-icons slider-arrow" id="before" (click)="anteriorTestimonio()">arrow_back</span>
 
         <section class="slider-body" *ngFor="let testimonio of testimonios; let i = index" [class.slider-body--show]="i === testimonioActual">
             <div class="slider-texts">
@@ -16,6 +16,6 @@
             </figure>
         </section>
 
-        <i class="fas fa-arrow-right slider-arrow" id="next" (click)="siguienteTestimonio()"></i>
+        <span class="material-icons slider-arrow" id="next" (click)="siguienteTestimonio()">arrow_forward</span>
     </div>
 </section>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getIconPath } from '../icons/icons';
 
 @Component({
   selector: 'app-about-card',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-card.component.css']
 })
 export class AboutCardComponent {
-
+  icons = {
+    whatsapp:  getIconPath('whatsapp'),
+    github:    getIconPath('github'),
+    facebook:  getIconPath('facebook'),
+    instagram: getIconPath('instagram'),
+    twitter:   getIconPath('twitter'),
+    linkedin:  getIconPath('linkedin'),
+  };
 }
