@@ -59,6 +59,10 @@
         "description": "In my Web Portfolio, with a modern design, you will find all my projects that I have worked on, both personal and formal. Additionally, I have a testimonials section and a functional contact form."
       },
       {
+        "title": "Fitnesskin",
+        "description": "Landing page for Edgar Enrique Calderón, a personal trainer from Provincia del Tequendama, Cundinamarca. Sports-themed design with services, pricing, testimonials, and direct WhatsApp contact."
+      },
+      {
         "title": "Task List",
         "description": "Organize tasks with style in this minimalist web application. Add and remove easily. Manage your productivity with simplicity"
       },

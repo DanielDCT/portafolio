@@ -49,6 +49,13 @@ export class ProyectosComponent implements OnInit {
       titleImg: 'Portafolio Daniel David Calderón Tinjaca',
     },
     {
+      image: '../../assets/images/proyectos/personales/proyecto17.webp',
+      tags: ['HTML5', 'CSS', 'JAVASCRIPT', 'GIT'],
+      link: 'https://danieldct.github.io/entrenador-edgar-calderon/',
+      altImg: 'Landing Entrenador Edgar Calderón',
+      titleImg: 'Landing Entrenador Edgar Calderón',
+    },
+    {
       image: '../../assets/images/proyectos/personales/proyecto16.webp',
       tags: ['HTML5' ,'CSS', 'JAVASCRIPT'],
       link: 'https://danieldct.github.io/lista-de-tareas/',

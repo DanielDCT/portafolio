@@ -44,7 +44,7 @@ export class TestimoniosComponent implements OnInit {
       cargo: item.role,
       mensaje: item.message,
       imagen: index === 0 ? '../../assets/images/testimonios/foto01.webp' : '../../assets/images/testimonios/foto02.webp',
-      web: index === 0 ? 'https://ironcore.netlify.app/' : 'https://fincaraizrh.netlify.app/',
+      web: index === 0 ? 'https://danieldct.github.io/entrenador-edgar-calderon/' : 'https://fincaraizrh.netlify.app/',
       titleImg: item.name,
       altImg: item.name,
     }));
