@@ -21,6 +21,10 @@ export class LoaderComponent implements OnInit {
       return;
     }
 
+    // Elimina la máscara estática del index.html (ya no se necesita, Angular toma el control)
+    const staticLoader = this.document.getElementById('static-loader');
+    if (staticLoader) staticLoader.remove();
+
     this.mostrarLoader = true;
 
     // Agrega la clase no-scroll al body
