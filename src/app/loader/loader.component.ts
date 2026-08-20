@@ -21,13 +21,26 @@ export class LoaderComponent implements OnInit {
       return;
     }
 
-    // Elimina la máscara estática del index.html (ya no se necesita, Angular toma el control)
     const staticLoader = this.document.getElementById('static-loader');
-    if (staticLoader) staticLoader.remove();
 
+    if (staticLoader) {
+      // El static loader del index.html ya está visible — lo dejamos actuar y lo retiramos
+      // sin activar el loader de Angular (evita que se vea doble)
+      this.mostrarLoader = false;
+      this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
+
+      setTimeout(() => {
+        staticLoader.style.transition = 'opacity 0.5s ease';
+        staticLoader.style.opacity = '0';
+        setTimeout(() => staticLoader.remove(), 500);
+        this.renderer.removeStyle(this.document.body, 'overflow');
+      }, 1400);
+
+      return;
+    }
+
+    // Sin static loader (p.ej. navegación interna): usar el loader de Angular normalmente
     this.mostrarLoader = true;
-
-    // Agrega la clase no-scroll al body
     this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
 
     setTimeout(() => {
