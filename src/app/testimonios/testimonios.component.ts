@@ -43,8 +43,8 @@ export class TestimoniosComponent implements OnInit {
       nombre: item.name,
       cargo: item.role,
       mensaje: item.message,
-      imagen: index === 0 ? '../../assets/images/testimonios/foto01.webp' : '../../assets/images/testimonios/foto02.webp',
-      web: index === 0 ? 'https://danieldct.github.io/entrenador-edgar-calderon/' : 'https://fincaraizrh.netlify.app/',
+      imagen: index === 0 ? '../../assets/images/testimonios/foto01.webp' : index === 1 ? '../../assets/images/testimonios/foto02.webp' : '../../assets/images/testimonios/foto03.webp',
+      web: index === 0 ? 'https://www.kudzupartners.com/' : index === 1 ? 'https://danieldct.github.io/entrenador-edgar-calderon/' : 'https://fincaraizrh.netlify.app/',
       titleImg: item.name,
       altImg: item.name,
     }));

@@ -141,6 +141,11 @@
     "goToPage": "Ir a la página",
     "items": [
       {
+        "name": "Joaquim Virgili",
+        "role": "Fundador Kudzu Partners",
+        "message": "Magnífico profesional, con gran predisposición y proactividad. Muy rápido en la implementación de páginas web, especialmente landings, y con ajuste a estándares de accesibilidad. Ha sido un placer trabajar contigo."
+      },
+      {
         "name": "Enrique Calderón",
         "role": "Entrenador Personal",
         "message": "¡Gran trabajo en el diseño de mi web! Me gustó bastante el resultado. Hizo que mi sitio web sea genial y fácil de usar. ¡Gracias por hacer que mi presencia en línea sea genial y por tu paciencia durante todo el proceso!"
